@@ -21,7 +21,7 @@ class Api::SessionsController < ApplicationController
     @user = current_user
     if @user
       logout
-      ender "api/users/show"
+      render "api/users/show"
     else
       render(
         json: ["Nobody signed in"],
