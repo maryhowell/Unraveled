@@ -16,11 +16,13 @@
 * `GET /api/users/:userId`
   * displays current user
 * `GET /api/users/:userId/favorites`
-  * displays users saved favorites 
-* `GET /api/users/:userId/carts/:cartId/items`
-  * displays a list of all the items in a user's cart
+  * displays users saved favorites
+* `GET /api/users/:userId/carts/:cartId/patterns`
+  * displays a list of all the patterns in a user's cart
 * `GET /api/users/:userId/reviews`
   * displays a list of all the reviews submitted by a user
+* `GET /api/users/:userId/favorites`
+  * displays a list of all the users favorites
 
 ### Session
 
@@ -33,17 +35,18 @@
   * displays a list of all the sellers
 * `GET /api/sellers/:sellerId`
   * displays a seller
-* `GET /api/sellers/:sellerId/items`
-  * displays a list of all the items that a seller has listed for sale
+* `GET /api/sellers/:sellerId/patterns`
+  * displays a list of all the patterns that a seller has listed for sale
 
-### Items
+### Patterns
 
-* `GET /api/items`
-  * displays all items
-* `GET /api/item/:itemId`
-  * displays individual item
-* `GET /api/items/:itemId/reviews`
-  * displays a list of all the reviews for an item
+* `GET /api/patterns`
+  * displays all patterns
+* `GET /api/pattern/:patternId`
+  * displays individual pattern
+* `GET /api/patterns/:patternId/reviews`
+  * displays a list of all the reviews for an pattern
+
 
 ### Reviews
 
