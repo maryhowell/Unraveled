@@ -70,7 +70,8 @@
 | column name     | data type | details                   |
 |:----------------|:---------:|:--------------------------|
 | id              | integer   | not null, primary key     |
-| item_id         | integer   | not null                  |
+| pattern_id      | integer   | not null, indexed         |
+| user_id         | integer   | not null, indexed         |
 | created_at      | datetime  | not null                  |
 | updated_at      | datetime  | not null                  |
 
@@ -79,6 +80,6 @@
 | column name     | data type | details                   |
 |:----------------|:---------:|:--------------------------|
 | tag_id          | integer   | not null, primary key     |
-| pattern_id      | integer   | not null                  |
+| pattern_id      | integer   | not null, indexed         |
 | created_at      | datetime  | not null                  |
 | updated_at      | datetime  | not null                  |
