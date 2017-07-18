@@ -38,6 +38,8 @@
       description: "sample_item_description",
       category: "sample_item_category",
       price: 15,
+      materials: "yarn-type",
+      pattern_spec: "sample_pattern_spec",
       quantity: 100,
       reviews: {
         1: {
@@ -70,5 +72,12 @@
       description: "sample_item_review_description"
     }
   }
+}
+favorites: {
+  1: {
+    item_id: 1,
+    user_id: 1
+  }
+}
 }
 ```js

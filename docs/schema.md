@@ -24,6 +24,8 @@
 | image_url       | string    | not null                  |
 | description     | text      | not null                  |              
 | price           | integer   | not null                  |
+| materials       | string    | not null                  |
+| pattern_spec    | string    | not null                  |
 | category        | string    | not null                  |
 | quantity        | integer   | not null                  |
 | created_at      | datetime  | not null                  |
@@ -59,5 +61,24 @@
 | user_id         | integer   | not null                  |
 | rating          | integer   | not null                  |
 | description     | text      | not null                  |
+| created_at      | datetime  | not null                  |
+| updated_at      | datetime  | not null                  |
+
+
+## favorites
+
+| column name     | data type | details                   |
+|:----------------|:---------:|:--------------------------|
+| id              | integer   | not null, primary key     |
+| item_id         | integer   | not null                  |
+| created_at      | datetime  | not null                  |
+| updated_at      | datetime  | not null                  |
+
+## tags
+
+| column name     | data type | details                   |
+|:----------------|:---------:|:--------------------------|
+| tag_id          | integer   | not null, primary key     |
+| pattern_id      | integer   | not null                  |
 | created_at      | datetime  | not null                  |
 | updated_at      | datetime  | not null                  |

@@ -45,10 +45,10 @@ Unraveled is an Etsy-like web application geared toward user made knitting patte
 ### Phase 2: Store & Item Model, API, and Components [2 Days]
 **Objective:** User can create store and add patterns
 
-### Phase 3: Cart Model, API, and Components [1 Day]
+### Phase 3: Cart Model, API, and Components [2 Day]
 **Objective:** User can add patterns from store to cart and submit purchase
 
-### Phase 4: NavBar & Search [2 Days]
+### Phase 4: NavBar & Search [1 Days]
 **Objective:** User can navigate, sign-in and search through site using NavBar
 
 ### Phase 5: Front Page & User Profile  [1 Day]
