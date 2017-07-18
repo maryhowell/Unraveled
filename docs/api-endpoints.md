@@ -15,6 +15,8 @@
 * `PATCH /api/users`
 * `GET /api/users/:userId`
   * displays current user
+* `GET /api/users/:userId/favorites`
+  * displays users saved favorites 
 * `GET /api/users/:userId/carts/:cartId/items`
   * displays a list of all the items in a user's cart
 * `GET /api/users/:userId/reviews`
@@ -37,6 +39,9 @@
 ### Items
 
 * `GET /api/items`
+  * displays all items
+* `GET /api/item/:itemId`
+  * displays individual item
 * `GET /api/items/:itemId/reviews`
   * displays a list of all the reviews for an item
 

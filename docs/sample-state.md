@@ -17,6 +17,13 @@
       }
     }
   },
+    favorites: {
+      1: {
+        item_id: 1,
+        user_id: 1
+      }
+    }
+  },
   form: {
     signUp: {errors: []},
     signIn: {errors: []}
@@ -73,11 +80,5 @@
     }
   }
 }
-favorites: {
-  1: {
-    item_id: 1,
-    user_id: 1
-  }
-}
-}
+
 ```js
