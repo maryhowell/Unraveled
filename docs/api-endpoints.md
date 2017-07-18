@@ -21,8 +21,7 @@
   * displays a list of all the patterns in a user's cart
 * `GET /api/users/:userId/reviews`
   * displays a list of all the reviews submitted by a user
-* `GET /api/users/:userId/favorites`
-  * displays a list of all the users favorites
+
 
 ### Session
 
