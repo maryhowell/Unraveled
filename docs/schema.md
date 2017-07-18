@@ -14,7 +14,7 @@
 | created_at      | datetime  | not null                  |
 | updated_at      | datetime  | not null                  |
 
-## pattern
+## patterns
 
 | column name     | data type | details                   |
 |:----------------|:---------:|:--------------------------|
@@ -31,7 +31,7 @@
 | created_at      | datetime  | not null                  |
 | updated_at      | datetime  | not null                  |      
 
-## carts
+## cart
 
 | column name     | data type | details                                                            |
 |:----------------|:---------:|:-------------------------------------------------------------------|
