@@ -23,27 +23,23 @@
     1: {
       seller_id: 1,
       name: "sample_item_name",
-      description: "sample_item_description",
+      short_description: "sample_item_description",
+      long_description: "sample_item_description",
       category: "sample_item_category",
       price: 15,
       materials: "yarn-type",
       pattern_spec: "sample_pattern_spec",
-      quantity: 100,
-      reviews: {
-        1: {
-          review_id: 1
-        }
+      tags: {
+        id: 1,
+        tag_name: "name"
       }
     }
+
   }
   cart: {
     cart_id: 1,
     user_id: 1
   },
-
-  cart_patterns: {
-    // stuff for patterns
-  }
   completed_transactions: {
     1: {
       cart_id: 1,

@@ -16,20 +16,22 @@
 
 ## patterns
 
-| column name     | data type | details                   |
-|:----------------|:---------:|:--------------------------|
-| id              | integer   | not null, primary key     |
-| seller_id       | integer   | not null                  |
-| name            | string    | not null                  |
-| image_url       | string    | not null                  |
-| description     | text      | not null                  |              
-| price           | integer   | not null                  |
-| materials       | string    | not null                  |
-| pattern_spec    | string    | not null                  |
-| category        | string    | not null                  |
-| quantity        | integer   | not null                  |
-| created_at      | datetime  | not null                  |
-| updated_at      | datetime  | not null                  |      
+| column name      | data type | details                   |
+|:-----------------|:---------:|:--------------------------|
+| id               | integer   | not null, primary key     |
+| seller_id        | integer   | not null                  |
+| name             | string    | not null                  |
+| image_url        | string    | not null, array true      |
+| short_description| string    | not null                  |
+| long_description | text      | not null                  |              
+| price            | integer   | not null                  |
+| tags             | integer   | not null, array or polymorphic|
+| materials        | string    | not null                  |
+| pattern_spec     | string    | not null                  |
+| pattern_url      | string    | not null                  |
+| category         | string    | not null                  |
+| created_at       | datetime  | not null                  |
+| updated_at       | datetime  | not null                  |      
 
 ## cart
 
@@ -41,14 +43,13 @@
 | created_at      | datetime  | not null                                                           |
 | updated_at      | datetime  | not null                                                           |  
 
-## cart_items
+## cart_patterns
 
 | column name     | data type | details                   |
 |:----------------|:---------:|:--------------------------|
 | id              | integer   | not null, primary key     |
 | cart_id         | integer   | not null                  |
-| item_id         | integer   | not null                  |
-| item_quantity   | integer   | not null                  |
+| pattern_id      | integer   | not null                  |
 | created_at      | datetime  | not null                  |
 | updated_at      | datetime  | not null                  |
 
@@ -79,7 +80,7 @@
 
 | column name     | data type | details                   |
 |:----------------|:---------:|:--------------------------|
-| tag_id          | integer   | not null, primary key     |
-| pattern_id      | integer   | not null, indexed         |
+| id              | integer   | not null, primary key     |
+| tag_name        | string    | not null                  |
 | created_at      | datetime  | not null                  |
 | updated_at      | datetime  | not null                  |
