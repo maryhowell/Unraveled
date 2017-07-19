@@ -2,8 +2,8 @@
 
 ## Heroku
 
-[Unraveled](http://unraveld.herokuapp.com/#/)
-[Trello](https://trello.com/b/t2pMS94X/unraveled)
+* [Unraveled](http://unraveld.herokuapp.com/#/)
+* [Trello](https://trello.com/b/t2pMS94X/unraveled)
 
 ## Minimum Viable Product
 
@@ -22,13 +22,12 @@ Unraveled is an Etsy-like web application geared toward user made knitting patte
 
 
 ## Wireframes
-
-* [Front Page](wireframes/frontpage.png)
-* [NavBar](wireframes/nav_bar.png)
-* [AuthForm](wireframes/auth_form.png)
-* [Store Page](wireframes/store_page.png)
-* [Product Page](wireframes/item_page.png)
-* [Cart](wireframes/checkout.png)
+* [Homepage Signed In](wireframes/home-page-signed-in.png)
+* [Homepage Signed Out](wireframes/home-page-signed-out.png)
+* [Store Page](wireframes/items-page.png)
+* [Product Page](wireframes/item-page.png)
+* [Cart](wireframes/cart-page.png)
+* [Purchases](wireframes/purchases-page.png)
 * [Login](wireframes/LOGIN_MODAL.png)
 * [SignUp](wireframes/SIGNUP_MODAL.png)
 
