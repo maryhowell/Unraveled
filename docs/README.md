@@ -10,7 +10,7 @@
 Unraveled is an Etsy-like web application geared toward user made knitting patterns. Below is a list of features to be implemented by the end of Week 9:
 
 - [ ] A production README, replacing this README
-- [ ] Hosting on Heroku
+- [X] Hosting on Heroku
 - [ ] New account creation, login, and guest/demo login
 - [ ] Product Listings (knitting patterns)
 - [ ] Shopping Cart
@@ -29,6 +29,8 @@ Unraveled is an Etsy-like web application geared toward user made knitting patte
 * [Store Page](wireframes/store_page.png)
 * [Product Page](wireframes/item_page.png)
 * [Cart](wireframes/checkout.png)
+* [Login](wireframes/LOGIN_MODAL.png)
+* [SignUp](wireframes/SIGNUP_MODAL.png)
 
 
 ## Docs
