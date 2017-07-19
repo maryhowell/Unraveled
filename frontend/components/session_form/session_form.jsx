@@ -86,7 +86,7 @@ class SessionForm extends React.Component {
             <br/>
 
             {this.renderErrors()}
-            <input
+            <input className="submitbutton"
               type="submit"
               value={this.props.formType === 'login' ? "Log In" : "Create Account"} />
           </div>

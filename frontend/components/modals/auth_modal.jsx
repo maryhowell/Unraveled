@@ -6,7 +6,7 @@ import SessionFormLoginContainer from '../session_form/session_form_login_contai
 
 const customStyles = {
   content : {
-    top                   : '50%',
+    top                   : '30%',
     left                  : '50%',
     right                 : 'auto',
     bottom                : 'auto',
@@ -60,7 +60,7 @@ class AuthModal extends React.Component {
                  <SessionFormSignUpContainer formType={formType}/>
                </Modal>
              </div> : <div>
-               <button onClick={this.openModal}>Log In</button>
+               <button className="myaccountbutton" onClick={this.openModal}>My Account</button>
                  <Modal
                    isOpen={this.state.modalIsOpen}
                    // onAfterOpen={this.afterOpenModal}

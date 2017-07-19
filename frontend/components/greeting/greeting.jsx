@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import AuthModal from '../modals/auth_modal';
 
 const signedOutGreeting = () => (
-  <header className="login-signup">
-    <nav className="listen-here-logo">
+  <header className="navbar">
+    <nav className="unraveled-logo">
       <Link to="/">
-        
+
       </Link>
     </nav>
 
@@ -21,7 +21,7 @@ const signedOutGreeting = () => (
 );
 
 const signedInGreeting = (currentUser, logout) => (
-	<hgroup className="header-group">
+	<hgroup className="navbar">
     <h2 className="header-name">Hi, {currentUser.email}!</h2>
     <button className="header-button" onClick={logout}>Sign Out</button>
 	</hgroup>

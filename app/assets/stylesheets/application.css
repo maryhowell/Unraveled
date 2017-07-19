@@ -13,3 +13,59 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #464646;
+}
+
+header {
+  margin: 0 auto;
+  padding-right: 10px;
+
+}
+/*modals */
+.ReactModal__Content {
+  width: 34%;
+  height: 45%;
+  box-sizing: border-box;
+}
+
+.login-input {
+  width: 379px;
+  height: 34px;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 5px;
+  margin: 5px;
+}
+
+input .login-input {
+  background-color: white;
+}
+
+.submitbutton {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid black;
+  height: 41px;
+  width: 119px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*NAV BAR*/
+.navbar {
+  display: flex;
+   align-items: center;
+   width: 97%;
+   background: #eee;
+   padding: 20px;
+   flex-wrap: wrap;
+}
+
+.header-name {
+  padding-left: 67%;
+}
