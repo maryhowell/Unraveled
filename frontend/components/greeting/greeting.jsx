@@ -4,24 +4,33 @@ import { Link } from 'react-router-dom';
 import AuthModal from '../modals/auth_modal';
 
 const signedOutGreeting = () => (
-  <header className="navbar">
-    <nav className="unraveled-logo">
-      <Link to="/">
+  <header className="main-head">
+    <nav className="navbar">
+      <div className="logo">
+        <Link to="/">
+          UnRavled
+        </Link>
+      </div>
 
-      </Link>
-    </nav>
+    <ul>
+      <li><a href="#homeSection">Home</a></li>
+      <li><a href="#aboutSection">About Me</a></li>
+      <li><a href="#projectSection">Projects</a></li>
+      <li><a href="#contactSection">Contact</a></li>
+    </ul>
 
-    <nav className="login-signup-buttons">
-      &nbsp;
-      <AuthModal formType="login"/>
-      &nbsp;
-      <AuthModal formType="signup"/>
+      <nav className="login-signup-buttons">
+        &nbsp;
+        <AuthModal formType="login"/>
+        &nbsp;
+        <AuthModal formType="signup"/>
+      </nav>
     </nav>
   </header>
 );
 
 const signedInGreeting = (currentUser, logout) => (
-	<hgroup className="navbar">
+	<hgroup className="header-group">
     <h2 className="header-name">Hi, {currentUser.email}!</h2>
     <button className="header-button" onClick={logout}>Sign Out</button>
 	</hgroup>

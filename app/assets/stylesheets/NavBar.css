@@ -1,0 +1,57 @@
+/*NAV BAR*/
+.main-head {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+}
+.navbar {
+  position: inherit;
+  width: 100%;
+  margin: 0;
+  background-color:#ffffff;
+  text-align: right;
+  padding: 20px 0 20px 0;
+  opacity: .5;
+}
+
+.navbar > ul {
+  list-style: none;
+}
+
+.logo {
+  float: left;
+  margin: 0 0 0 30px;
+  padding:
+}
+
+.navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline;
+  padding: 0 40px 0 0 ;
+}
+
+.navlinks li a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+.logo a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+.navbar .navlinks a:hover {
+  color: red;
+}
+
+.navbar .logo a:hover {
+  color: red;
+}
