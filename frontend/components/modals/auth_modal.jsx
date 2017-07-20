@@ -28,7 +28,8 @@ class AuthModal extends React.Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
-  openModal() {
+  openModal(e) {
+    e.preventDefault(); 
     this.setState({modalIsOpen: true});
   }
 
@@ -56,7 +57,7 @@ class AuthModal extends React.Component {
                  style={customStyles}
                  contentLabel="Example Modal"
                >
-                 <button onClick={this.closeModal}>X</button>
+                 <button className="closebutton" onClick={this.closeModal}>X</button>
                  <SessionFormSignUpContainer formType={formType}/>
                </Modal>
              </div> : <div>
@@ -68,7 +69,7 @@ class AuthModal extends React.Component {
                    style={customStyles}
                    contentLabel="Example Modal"
                  >
-                   <button onClick={this.closeModal}>X</button>
+                   <button className="closebutton" onClick={this.closeModal}>X</button>
                    <SessionFormLoginContainer formType={formType}/>
                  </Modal>
              </div>}

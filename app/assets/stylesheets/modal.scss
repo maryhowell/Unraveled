@@ -36,6 +36,13 @@ input:-webkit-autofill {
   width: 191px;
   font-family: 'Poppins', sans-serif;
 }
+
+.closebutton {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
 .demo {
   margin-top: 8px;
   color: #fff;
