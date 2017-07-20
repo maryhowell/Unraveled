@@ -5,6 +5,7 @@ import { Route, Redirect, Switch,
 import GreetingContainer from './greeting/greeting_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import AuthModal from './modals/auth_modal';
+import Masthead from './masthead/masthead';
 
 const App = ( { first }) => (
   <div>
@@ -12,7 +13,7 @@ const App = ( { first }) => (
       <Link to="/" className="header-link">
       </Link>
       <GreetingContainer />
-      { first }
+      <Masthead/>
     </header>
   </div>
 );

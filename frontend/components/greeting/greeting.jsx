@@ -15,8 +15,7 @@ const signedOutGreeting = () => (
       </div>
 
     <ul>
-      <li><a className="navbutton" href="#homeSection">Home</a></li>
-      <li><a className="navbutton" href="#patternSection">Patterns</a></li>
+
         <nav className="login-signup-buttons">
           &nbsp;
           <AuthModal formType="login"/>
@@ -29,6 +28,9 @@ const signedOutGreeting = () => (
     </nav>
   </header>
 );
+
+// <li><a className="navbutton" href="#homeSection">Home</a></li>
+// <li><a className="navbutton" href="#patternSection">Patterns</a></li>
 
 const signedInGreeting = (currentUser, logout) => (
 	<hgroup className="header-group">

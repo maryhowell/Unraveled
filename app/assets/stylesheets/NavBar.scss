@@ -1,20 +1,20 @@
 /*NAV BAR*/
-.main-head {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 800px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row;
-}
+// .main-head {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   width: 100%;
+//   min-height: 800px;
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   flex-flow: row;
+// }
 .navbar {
   width: 100%;
   margin: 0;
   padding: 20px 0 20px 0;
   opacity: .5;
-  background-color: #D3D3D3;
+  background-color: white;
   height: 40px;
 }
 
@@ -58,7 +58,7 @@
   text-transform: uppercase;
   font-weight:bold;
   font-size: 1.8em;
-  margin-left: 35px;
+  margin-left: 60px;
 }
 
 .navbar .navlinks a:hover {
@@ -89,7 +89,7 @@ input .login-input {
 
 .login-signup-buttons {
   display: inline-flex;
-  margin-left: 838px;
+  margin-left: 860px;
   margin-top: -19px;
 }
 .navbutton{
