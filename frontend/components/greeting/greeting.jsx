@@ -17,14 +17,15 @@ const signedOutGreeting = () => (
       <li><a href="#aboutSection">About Me</a></li>
       <li><a href="#projectSection">Projects</a></li>
       <li><a href="#contactSection">Contact</a></li>
+        <nav className="login-signup-buttons">
+          &nbsp;
+          <AuthModal formType="login"/>
+          &nbsp;
+          <AuthModal formType="signup"/>
+        </nav>
     </ul>
 
-      <nav className="login-signup-buttons">
-        &nbsp;
-        <AuthModal formType="login"/>
-        &nbsp;
-        <AuthModal formType="signup"/>
-      </nav>
+
     </nav>
   </header>
 );

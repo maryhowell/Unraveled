@@ -2,7 +2,7 @@
 .ReactModal__Content {
   width: 34%;
   height: 45%;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 .login-input {
@@ -17,11 +17,19 @@ input .login-input {
   background-color: white;
 }
 
-.login-signup-buttons {
-  padding-left: 95%;
-}
 
 .submitbutton {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid black;
+  height: 41px;
+  width: 119px;
+  font-family: 'Poppins', sans-serif;
+}
+.demo {
+  margin-top: 8px;
   color: #fff;
   cursor: pointer;
   display: block;

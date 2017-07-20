@@ -16,11 +16,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+
+
+@import './reset.scss';
+@import 'modal.scss';
+@import 'NavBar.scss';
+
 body {
   font-family: 'Poppins', sans-serif;
-  color: #464646;
-}
-a {
-  text-decoration: none;
-  list-style-type: none;
 }
