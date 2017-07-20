@@ -33,10 +33,27 @@ const signedOutGreeting = () => (
 // <li><a className="navbutton" href="#patternSection">Patterns</a></li>
 
 const signedInGreeting = (currentUser, logout) => (
-	<hgroup className="header-group">
-    <h2 className="header-name">Hi, {currentUser.email}!</h2>
-    <button className="header-button" onClick={logout}>Sign Out</button>
-	</hgroup>
+  <header className="main-head">
+    <nav className="navbar">
+      <div className="logo">
+        <Link to="/">
+          UnRavled
+        </Link>
+      </div>
+
+      <div>
+        <span className="usergreeting" >Hi, {currentUser.email}!</span>
+        <button className="signoutbutton" onClick={logout}>Sign Out</button>
+      </div>
+
+
+
+
+    </nav>
+  </header>
+
+
+
 );
 
 
