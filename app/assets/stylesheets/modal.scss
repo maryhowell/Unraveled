@@ -1,7 +1,7 @@
 /*modals */
 .ReactModal__Content {
   width: 34%;
-  height: 45%;
+  min-height: 340px;
   // box-sizing: border-box;
 }
 
@@ -9,7 +9,7 @@
   width: 379px;
   height: 34px;
   font-family: 'Poppins', sans-serif;
-  padding-top: 5px;
+  padding: 8px;
   margin: 5px;
 }
 
@@ -17,6 +17,14 @@ input .login-input {
   background-color: white;
 }
 
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+// To overwrite chromes yellow background
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
 
 .submitbutton {
   color: #fff;

@@ -1,13 +1,16 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, Route, IndexRoute, hashHistory } from 'react-router-dom';
 
 import App from './app';
+import { Masthead } from './masthead/masthead';
 
 const Root = ({ store }) => (
   <Provider store={store}>
     <HashRouter>
-      <App />
+      <Route path='/' component={ App }>
+        <IndexRoute components={ Masthead } />
+      </Route>
     </HashRouter>
   </Provider>
 );

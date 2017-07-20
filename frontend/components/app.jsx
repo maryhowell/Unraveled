@@ -6,12 +6,13 @@ import GreetingContainer from './greeting/greeting_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import AuthModal from './modals/auth_modal';
 
-const App = () => (
+const App = ( { first }) => (
   <div>
     <header>
       <Link to="/" className="header-link">
       </Link>
       <GreetingContainer />
+      { first }
     </header>
   </div>
 );

@@ -3,6 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import AuthModal from '../modals/auth_modal';
 
+
+
 const signedOutGreeting = () => (
   <header className="main-head">
     <nav className="navbar">
@@ -13,10 +15,8 @@ const signedOutGreeting = () => (
       </div>
 
     <ul>
-      <li><a href="#homeSection">Home</a></li>
-      <li><a href="#aboutSection">About Me</a></li>
-      <li><a href="#projectSection">Projects</a></li>
-      <li><a href="#contactSection">Contact</a></li>
+      <li><a className="navbutton" href="#homeSection">Home</a></li>
+      <li><a className="navbutton" href="#patternSection">Patterns</a></li>
         <nav className="login-signup-buttons">
           &nbsp;
           <AuthModal formType="login"/>

@@ -12,13 +12,11 @@
 .navbar {
   width: 100%;
   margin: 0;
-  // text-align: right;
   padding: 20px 0 20px 0;
   opacity: .5;
   background-color: #D3D3D3;
+  height: 40px;
 }
-//   display: flex;
-//   flex-direction: row;
 
 
 .navbar {
@@ -31,18 +29,6 @@
     }
   }
 }
-
-// .navbar > ul {
-//   list-style: none;
-//   display: block;
-//   margin: 4px;
-//   padding: 5px;
-//   flex: 1 6 20%;
-//   flex-grow: 1;
-// flex-shrink: 1;
-// flex-basis: 100%;
-//
-// }
 
 .logo {
   float: left;
@@ -66,10 +52,13 @@
 }
 
 .logo a {
+  display: block;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   font-weight:bold;
+  font-size: 1.8em;
+  margin-left: 35px;
 }
 
 .navbar .navlinks a:hover {
@@ -99,7 +88,13 @@ input .login-input {
 }
 
 .login-signup-buttons {
-  display: flex;
+  display: inline-flex;
+  margin-left: 838px;
+  margin-top: -19px;
+}
+.navbutton{
+  text-decoration: none;
+  padding: 5px;
 }
 
 .submitbutton {
