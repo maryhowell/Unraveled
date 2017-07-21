@@ -87,15 +87,25 @@ input .login-input {
   padding: 5px;
 }
 
+.user {
+  padding: 21px;
+  display: inline-block;
+  margin-top: -13px;
+}
+
 .submitbutton {
-  color: #fff;
   cursor: pointer;
   display: block;
   position: relative;
-  border: 2px solid black;
-  height: 41px;
-  width: 119px;
+  background:none;
+  border:none;
+  font-size:1em;
+  color: black;
   font-family: 'Poppins', sans-serif;
+  height: 41px;
+  background-color: lightgrey;
+  width: 191px;
+
 }
 
 .myaccountbutton {
@@ -106,6 +116,7 @@ input .login-input {
   color:black;
   width: 65px;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .registerbutton {
@@ -116,6 +127,7 @@ input .login-input {
   color:black;
   width: 65px;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .signoutbutton{
@@ -124,10 +136,11 @@ input .login-input {
   border:none;
   font-size:1em;
   color:black;
+  margin-top: -50px;
   display: flex;
   margin-left: auto;
-  margin-top: 5px;
   margin-right: 75px;
+  cursor: pointer;
 }
 
 .usergreeting {

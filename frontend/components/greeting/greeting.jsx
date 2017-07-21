@@ -42,7 +42,7 @@ const signedInGreeting = (currentUser, logout) => (
       </div>
 
       <div>
-        <span className="usergreeting" >Hi, {currentUser.email}!</span>
+        <span className="user" >Hi, {currentUser.email}!</span>
         <button className="signoutbutton" onClick={logout}>Sign Out</button>
       </div>
 

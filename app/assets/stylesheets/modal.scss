@@ -13,6 +13,10 @@
   margin: 5px;
 }
 
+.login-form-box {
+  margin-top: -36px;
+}
+
 input .login-input {
   background-color: white;
 }
@@ -38,9 +42,15 @@ input:-webkit-autofill {
 }
 
 .closebutton {
+  font-family: 'Poppins', sans-serif;
+  background:none;
+  border:none;
+  font-size:1em;
+  color:black;
   display: flex;
   justify-content: space-between;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .demo {
