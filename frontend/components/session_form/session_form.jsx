@@ -63,7 +63,7 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    const demoUser = {user: {email:"some@something.com", password:"12345678"}};
+    const demoUser = {user: {email:"DemoUser@gmail.com", password:"12345678"}};
     const { demoLogin } = this.props;
 
     return (
@@ -71,6 +71,7 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="login-form-box">
           <br/>
           <div className="login-form">
+            <p> WELCOME BACK</p>
             <br/>
             <label>
               <input type="text"

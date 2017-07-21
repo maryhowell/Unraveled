@@ -6,6 +6,8 @@
   opacity: .5;
   background-color: white;
   height: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -13,7 +15,7 @@
   & ul {
     display: flex;
     list-style: none;
-    width: 40%;
+    padding-right: 5%;
     & li {
       flex: 1 1 100%;
     }
@@ -59,12 +61,6 @@
   color: blue;
 }
 
-.ReactModal__Content {
-  width: 34%;
-  height: 45%;
-  box-sizing: border-box;
-}
-
 .login-input {
   width: 379px;
   height: 34px;
@@ -79,18 +75,17 @@ input .login-input {
 
 .login-signup-buttons {
   display: inline-flex;
-  margin-left: 860px;
-  margin-top: -19px;
-}
+  justify-content: space-between;
+  margin-top: -8px;
+  }
 .navbutton{
   text-decoration: none;
   padding: 5px;
 }
 
 .user {
-  padding: 21px;
-  display: inline-block;
-  margin-top: -13px;
+  display: block;
+  margin-top: 16px;
 }
 
 .submitbutton {
@@ -114,9 +109,10 @@ input .login-input {
   border:none;
   font-size:1em;
   color:black;
-  width: 65px;
-  padding-top: 10px;
+  display: flex;
+  margin-left: auto;
   cursor: pointer;
+  justify-content: space-between;
 }
 
 .registerbutton {
@@ -125,9 +121,23 @@ input .login-input {
   border:none;
   font-size:1em;
   color:black;
-  width: 65px;
-  padding-top: 10px;
+  display: flex;
+  margin-left: auto;
   cursor: pointer;
+  justify-content: space-between;
+}
+
+.demobutton {
+  font-family: 'Poppins', sans-serif;
+  background:none;
+  border:none;
+  font-size:1em;
+  color:black;
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+  justify-content: space-between;
+
 }
 
 .signoutbutton{
@@ -141,6 +151,8 @@ input .login-input {
   margin-left: auto;
   margin-right: 75px;
   cursor: pointer;
+  justify-content: space-between;
+
 }
 
 .usergreeting {

@@ -1,9 +1,5 @@
 /*modals */
-.ReactModal__Content {
-  width: 34%;
-  min-height: 350px;
-  // box-sizing: border-box;
-}
+
 
 .login-input {
   width: 379px;
@@ -28,17 +24,6 @@ button {
 // To overwrite chromes yellow background
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
-}
-
-.submitbutton {
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  border: 2px solid black;
-  height: 41px;
-  width: 191px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .closebutton {
