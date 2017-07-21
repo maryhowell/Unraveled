@@ -5,7 +5,7 @@ import AuthModal from '../modals/auth_modal';
 
 
 
-const signedOutGreeting = () => (
+const signedOutGreeting = login => (
   <header className="main-head">
     <nav className="navbar">
       <div className="logo">
@@ -15,8 +15,8 @@ const signedOutGreeting = () => (
       </div>
 
     <ul>
-
         <nav className="login-signup-buttons">
+          <button className="demobutton" onClick={ () => login({user:{ email: 'DemoUser@gmail.com', password: '12345678'} })}>Demo</button>
           &nbsp;
           <AuthModal formType="login"/>
           &nbsp;
@@ -45,10 +45,6 @@ const signedInGreeting = (currentUser, logout) => (
         <span className="user" >Hi, {currentUser.email}!</span>
         <button className="signoutbutton" onClick={logout}>Sign Out</button>
       </div>
-
-
-
-
     </nav>
   </header>
 
@@ -57,8 +53,8 @@ const signedInGreeting = (currentUser, logout) => (
 );
 
 
-const Greeting = ({ currentUser, logout }) => (
-  currentUser ? signedInGreeting(currentUser, logout) : signedOutGreeting()
+const Greeting = ({ currentUser, logout, login }) => (
+  currentUser ? signedInGreeting(currentUser, logout) : signedOutGreeting(login)
 );
 
 export default Greeting;
