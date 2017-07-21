@@ -19,8 +19,8 @@
 
 
 /*@import './reset.scss';*/
-@import 'modal.scss';
-@import 'NavBar.scss';
+/*@import 'modal.scss';
+@import 'NavBar.scss';*/
 
 body {
   font-family: 'Poppins', sans-serif;
