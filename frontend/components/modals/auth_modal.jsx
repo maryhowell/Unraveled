@@ -29,14 +29,10 @@ class AuthModal extends React.Component {
   }
 
   openModal(e) {
-    e.preventDefault(); 
+    e.stopPropagation();
+    e.preventDefault();
     this.setState({modalIsOpen: true});
   }
-
-  // afterOpenModal() {
-  //   // references are now sync'd and can be accessed.
-  //   this.subtitle.style.color = '#f00';
-  // }
 
   closeModal() {
     this.setState({modalIsOpen: false});
@@ -52,7 +48,6 @@ class AuthModal extends React.Component {
              <button onClick={this.openModal}>Create Account</button>
                <Modal
                  isOpen={this.state.modalIsOpen}
-                 // onAfterOpen={this.afterOpenModal}
                  onRequestClose={this.closeModal}
                  style={customStyles}
                  contentLabel="Example Modal"
@@ -64,7 +59,6 @@ class AuthModal extends React.Component {
                <button className="myaccountbutton" onClick={this.openModal}>My Account</button>
                  <Modal
                    isOpen={this.state.modalIsOpen}
-                   // onAfterOpen={this.afterOpenModal}
                    onRequestClose={this.closeModal}
                    style={customStyles}
                    contentLabel="Example Modal"
