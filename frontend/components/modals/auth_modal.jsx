@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
+
 import SessionFormSignUpContainer from '../session_form/session_form_signup_container';
 import SessionFormLoginContainer from '../session_form/session_form_login_container';
 
@@ -36,6 +37,7 @@ class AuthModal extends React.Component {
 
   closeModal() {
     this.setState({modalIsOpen: false});
+    this.props.clearErrors();
   }
 
     render() {

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AuthModal from '../modals/auth_modal';
+import AuthModalContainer from '../modals/auth_modal_container';
 
 
 
@@ -18,9 +18,9 @@ const signedOutGreeting = login => (
         <nav className="login-signup-buttons">
           <button className="demobutton" onClick={ () => login({user:{ email: 'DemoUser@gmail.com', password: '12345678'} })}>Demo</button>
           &nbsp;
-          <AuthModal formType="login"/>
+          <AuthModalContainer formType="login"/>
           &nbsp;
-          <AuthModal formType="signup"/>
+          <AuthModalContainer formType="signup"/>
         </nav>
     </ul>
 
