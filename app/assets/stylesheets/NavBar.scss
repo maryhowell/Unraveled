@@ -8,6 +8,7 @@
   height: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -159,4 +160,9 @@ input .login-input {
   position: fixed;
   margin-top: 4px;
   margin-left: 19px;
+}
+
+.top_nav_bottom {
+  padding: 14.5px 125px;
+  border-bottom: 1px solid gray;
 }

@@ -25,9 +25,7 @@
       name: "sample_item_name",
       short_description: "sample_item_description",
       long_description: "sample_item_description",
-      category: "sample_item_category",
       price: 15,
-      materials: "yarn-type",
       pattern_spec: "sample_pattern_spec",
       tags: {
         id: 1,

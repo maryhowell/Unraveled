@@ -21,7 +21,12 @@
 /*@import './reset.scss';*/
 /*@import 'modal.scss';
 @import 'NavBar.scss';*/
-
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
 body {
   font-family: 'Poppins', sans-serif;
 }

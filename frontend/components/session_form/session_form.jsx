@@ -70,7 +70,7 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="login-form-box">
           <br/>
           <div className="login-form">
-            <p> WELCOME BACK</p>
+            <p> WELCOME</p>
             <br/>
             <label>
               <input type="text"

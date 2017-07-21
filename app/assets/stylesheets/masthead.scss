@@ -3,9 +3,6 @@
   flex-direction: column;
 }
 
-
-
-
 .masthead-image {
   background: url(https://res.cloudinary.com/unravled/image/upload/v1500588149/bar-rnw-282399_ij2xwh.jpg)
   no-repeat center;
@@ -15,4 +12,23 @@
   position: absolute;
   background-size: cover;
 
+}
+
+.shop-link {
+  position: absolute;
+  top: 67%;
+  left: 66%;
+  font-family: 'Poppins', sans-serif;
+  background: none;
+  font-size: 2em;
+
+  color: #D0D3D4;
+  display: flex;
+  margin-left: auto;
+  margin-right: 75px;
+  cursor: pointer;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: #D0D3D4;
+  border-width: 7px;
 }
