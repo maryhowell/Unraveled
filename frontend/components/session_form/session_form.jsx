@@ -63,8 +63,7 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    const demoUser = {user: {email:"DemoUser@gmail.com", password:"12345678"}};
-    const { demoLogin } = this.props;
+
 
     return (
       <div className="login-form-container">
@@ -96,7 +95,6 @@ class SessionForm extends React.Component {
             <input className="submitbutton"
               type="submit"
               value={this.props.formType === 'login' ? "Log In" : "Create Account"} />
-            <button className="demo" onClick={() => demoLogin(demoUser)}>Demo</button>
           </div>
         </form>
       </div>
