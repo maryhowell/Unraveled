@@ -1,14 +1,4 @@
 /*NAV BAR*/
-// .main-head {
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   min-height: 800px;
-//   margin: 0;
-//   padding: 0;
-//   display: flex;
-//   flex-flow: row;
-// }
 .navbar {
   width: 100%;
   margin: 0;
@@ -108,7 +98,32 @@ input .login-input {
   font-family: 'Poppins', sans-serif;
 }
 
+.myaccountbutton {
+  font-family: 'Poppins', sans-serif;
+  background:none;
+  border:none;
+  font-size:1em;
+  color:black;
+  width: 65px;
+  padding-top: 10px;
+}
+
+.registerbutton {
+  font-family: 'Poppins', sans-serif;
+  background:none;
+  border:none;
+  font-size:1em;
+  color:black;
+  width: 65px;
+  padding-top: 10px;
+}
+
 .signoutbutton{
+  font-family: 'Poppins', sans-serif;
+  background:none;
+  border:none;
+  font-size:1em;
+  color:black;
   display: flex;
   margin-left: auto;
   margin-top: 5px;

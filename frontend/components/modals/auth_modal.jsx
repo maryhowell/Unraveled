@@ -45,7 +45,7 @@ class AuthModal extends React.Component {
          <div>
            {this.props.formType === "signup" ?
              <div>
-             <button onClick={this.openModal}>Create Account</button>
+             <button className="registerbutton" onClick={this.openModal}>Register</button>
                <Modal
                  isOpen={this.state.modalIsOpen}
                  onRequestClose={this.closeModal}
@@ -56,7 +56,7 @@ class AuthModal extends React.Component {
                  <SessionFormSignUpContainer formType={formType}/>
                </Modal>
              </div> : <div>
-               <button className="myaccountbutton" onClick={this.openModal}>My Account</button>
+               <button className="myaccountbutton" onClick={this.openModal}>Sign in</button>
                  <Modal
                    isOpen={this.state.modalIsOpen}
                    onRequestClose={this.closeModal}
