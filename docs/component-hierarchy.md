@@ -8,30 +8,30 @@
 
 * Masthead
   * SearchBarContainer
-* ItemsContainer
+* PatternsContainer
 
-**ItemsContainer**
+**PatternsContainer**
 
-* Items
-  * Item
+* Patterns
+  * Pattern
 
-**ItemContainer**
+**PatternContainer**
 
-* Item
+* Pattern
   * AddToCartContainer
 * Reviews
   * Review
 
 **CartContainer**
 
-* Items
-  * Item
+* Patterns
+  * Pattern
 * MakeAPurchaseContainer
 
 **PurchasesContainer**
 
-* Items
-  * Item
+* Patterns
+  * Pattern
     * SubmitReviewContainer
 
 ## Routes
@@ -40,8 +40,8 @@
 |:------------------------|:-----------------------:|
 | "/"                     | "HeaderContainer"       |
 | "/home"                 | "HomeContainer"         |
-| "/items"                | "ItemsContainer"        |
-| "/items/:category       | "ItemsContainer"        |
-| "/items/:id"            | "ItemContainer"         |   
+| "/patterns"                | "PatternsContainer"        |
+| "/patterns/:category       | "PatternsContainer"        |
+| "/patterns/:id"            | "PatternContainer"         |   
 | "/cart"                 | "CartContainer"         |
 | "/purchases"            | "PurchasesContainer"    |
