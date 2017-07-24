@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Masthead = () => {
   return(
     <header className='masthead'>
       <div className='masthead-image'>
 
-       <button className='shop-link' to='/'>Shop All Patterns</button>
+         <Link  className='shop-link' to='/patterns'>Shop our patterns</Link>
 
       </div>
 
@@ -15,7 +15,7 @@ const Masthead = () => {
 };
 
 export default Masthead;
-
+// <button className='shop-link' to='/patterns'>Shop All Patterns</button>
+//
 // <div>
-//   <Link  className='shop-link' to='/patterns' activeClassName='current'>Shop our patterns</Link>
-// </div>
+//

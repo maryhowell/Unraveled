@@ -6,6 +6,9 @@ import GreetingContainer from './greeting/greeting_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import AuthModal from './modals/auth_modal';
 import Masthead from './masthead/masthead';
+import Footer from './footer/footer';
+import PatternListContainer from './patterns/pattern_list_container';
+
 
 const App = ( { first }) => (
   <div>
@@ -13,7 +16,9 @@ const App = ( { first }) => (
       <Link to="/" className="header-link">
       </Link>
       <GreetingContainer />
-      <Masthead/>
+      <Route exact path='/' component={ Masthead }/>
+      <Route path='/patterns' component={ PatternListContainer } />
+      <Footer />
     </header>
   </div>
 );

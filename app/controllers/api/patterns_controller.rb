@@ -1,11 +1,12 @@
 class Api::PatternsController < ApplicationController
 
   def index
-    render json: Pattern.all.where(user_id: current_user.id)
+    @patterns = Pattern.all
+    render :index
   end
 
   def show
-    render json: Pattern.fins(params[:id])
+    render json: Pattern.find(params[:id])
   end
 
   def create
@@ -37,6 +38,6 @@ class Api::PatternsController < ApplicationController
   private
 
   def pattern_params
-    params.require(:pattern).permit(:name, :short_description, :price, image_url: [])
+    params.require(:pattern).permit(:name, :short_description, :price, image_url:[])
   end
 end

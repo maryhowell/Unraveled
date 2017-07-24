@@ -5,6 +5,7 @@ import { HashRouter, Route, IndexRoute, hashHistory } from 'react-router-dom';
 import App from './app';
 import Masthead from './masthead/masthead';
 
+
 const Root = ({ store }) => (
   <Provider store={store}>
     <HashRouter>
