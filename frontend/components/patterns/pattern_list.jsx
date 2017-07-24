@@ -24,6 +24,10 @@ class PatternIndex extends Component {
   }
 
   render() {
+    if (this.props.loading === true) {
+      return <div>Loading</div>;
+    }
+    
     const { patterns, fewPatterns } = this.props;
 
     if (this.props.location.pathname === '/') {
