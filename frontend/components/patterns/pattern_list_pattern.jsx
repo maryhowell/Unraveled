@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const PatternIndexPattern = ({ pattern }) => {
   return (
@@ -11,11 +11,6 @@ const PatternIndexPattern = ({ pattern }) => {
             </Link>
         </li>
         <li className='pattern-name'>{ pattern.name }</li>
-        <ul className='pattern-details'>
-          <li className='pattern-seller'>{ `${pattern.seller_id.first_name} ${pattern.seller.last_name}` }</li>
-          <li className='pattern-discription'>{ `${pattern.short_description}`}</li>
-          <li className='pattern-price'>{ `$${pattern.price}` }</li>
-        </ul>
       </ul>
     </li>
   );

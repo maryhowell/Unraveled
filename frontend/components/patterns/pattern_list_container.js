@@ -6,7 +6,7 @@ import { selectAllPatterns } from '../../reducers/selectors';
 import { fetchPatterns, fetchPattern } from '../../actions/pattern_actions';
 
 const mapStateToProps = state => ({
-  items: selectAllPatterns(state),
+  patterns: selectAllPatterns(state),
   loading: state.fetching,
 });
 
