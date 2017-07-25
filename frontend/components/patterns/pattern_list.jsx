@@ -1,10 +1,12 @@
-
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+
 
 import PatternIndexPattern from './pattern_list_pattern';
 
 class PatternIndex extends Component {
+
+
   componentWillMount() {
     // if (this.props.location.query.searchWords) {
     //   this.props.fetchSearchedPatterns(this.props.location.query.searchWords);
@@ -43,8 +45,8 @@ class PatternIndex extends Component {
     } else {
       return (
         <section className='section-description-all'>
-          <div className='patterns-index'>
-            <ul>
+          <div >
+            <ul className='patterns-index'>
               { patterns.map(pattern => <PatternIndexPattern key={pattern.id} pattern={pattern} />)}
             </ul>
           </div>

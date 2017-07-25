@@ -1,3 +1,19 @@
 // Place all the styles related to the pattern controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.patterns-index {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 1400px;
+}
+
+li.pattern-image {
+  margin: 32px;
+}
+
+p.pattern-name {
+  margin: 0;
+  padding: 0;
+}
