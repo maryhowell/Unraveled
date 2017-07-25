@@ -71,7 +71,7 @@ user7 = User.create!(
 )
 
 pattern0 = Pattern.create!(
-  seller_id: demo.id,
+  seller_id: 1,
   name: "Carpeaux",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500928568/carpeaux_1_medium2_tplwdd.jpg",
               "https://res.cloudinary.com/unravled/image/upload/v1500928568/carpeaux_2_medium2_fltttm.jpg",
