@@ -17,7 +17,7 @@ class PatternItem extends Component {
 
         <div className='pattern-show'>
           <div className='pattern-show-top'>
-              <a className='fa-long-arrow-left fa-2x back-button' aria-hidden="true" href='#/patterns' />
+              <a className='fa fa-long-arrow-left fa-2x back-button' aria-hidden="true" href='#/patterns' />
             <div className='pattern-show-image'>
               <img src={ pattern.image_url[0] } alt={ pattern.name } />
             </div>
