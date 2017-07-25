@@ -17,12 +17,16 @@ const App = ( { first }) => (
       <Link to="/" className="header-link">
       </Link>
       <GreetingContainer />
+    <Switch>
       <Route exact path='/' component={ Masthead }/>
-      <Route path='/patterns' component={ PatternListContainer } />
       <Route path='/patterns/:patternId'component={ PatternItemContainer } />
-      <Footer />
+      <Route path='/patterns' component={ PatternListContainer } />
+
+    </Switch>
+
     </header>
   </div>
 );
 
 export default App;
+  // <Footer />

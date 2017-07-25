@@ -35,6 +35,48 @@ user2 = User.create!(
   password: "12345678"
 )
 
+user3 = User.create!(
+  first_name: "John",
+  last_name: "Jacob",
+  email: "fgjb@gmail.com",
+  password: "12345678"
+)
+
+user4 = User.create!(
+  first_name: "Mable",
+  last_name: "Smith",
+  email: "jkzfsb@gmail.com",
+  password: "12345678"
+)
+
+user5 = User.create!(
+  first_name: "Laurie",
+  last_name: "Smithy",
+  email: "dKBFS@gmail.com",
+  password: "12345678"
+)
+
+user6 = User.create!(
+  first_name: "John",
+  last_name: "Jacob",
+  email: "dsv@gmail.com",
+  password: "12345678"
+)
+
+user7 = User.create!(
+  first_name: "Mable",
+  last_name: "Smith",
+  email: "b@gmail.com",
+  password: "12345678"
+)
+
+user8 = User.create!(
+  first_name: "Laurie",
+  last_name: "Smithy",
+  email: "c@gmail.com",
+  password: "12345678"
+)
+
 pattern0 = Pattern.create!(
   seller_id: 1,
   name: "Carpeaux",

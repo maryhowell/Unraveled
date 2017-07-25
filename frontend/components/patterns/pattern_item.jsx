@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 
 class PatternItem extends Component {
   componentDidMount() {
+    if (this.patterns){
     this.props.fetchPattern(this.patterns.id);
   }
+}
 
   render() {
     const { pattern } = this.props;
@@ -19,11 +21,10 @@ class PatternItem extends Component {
             <div className='pattern-show-details'>
               <ul>
                 <li>{ pattern.name }</li>
-
                 <li className='pattern-show-price'>{ `$${pattern.price}.00` }</li>
-                <li className='overview'></li>
-                <li>{ pattern.short_description }</li>
+
               </ul>
+              <div className='pattern-show-description'>{ pattern.short_description }</div>
             </div>
           </div>
         </div>
