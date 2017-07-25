@@ -6,10 +6,12 @@
 .patterns-index {
   display: flex;
   justify-content: center;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-    background-color: #f2f3f2;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  background-color: #f2f3f2;
+  text-decoration: none;
+
 }
 
 .pattern-image {
@@ -26,9 +28,14 @@
   padding: 3px;
   background-color: white;
   position: relative;
+  color: black;
 }
 
 img.image {
     height: 375px;
     width: auto;
   }
+
+a {
+  text-decoration: none;
+}

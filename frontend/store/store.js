@@ -4,6 +4,12 @@ import thunk from 'redux-thunk';
 import rootReducer from '../reducers/root_reducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+const middlewares = [thunk];
+
+if (process.env.NODE_ENV !== 'production') {
+  middlewares.push(logger);
+}
+
 const configureStore = (preloadedState = {}) => (
   createStore(
     rootReducer,

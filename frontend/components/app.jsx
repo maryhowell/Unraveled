@@ -19,11 +19,10 @@ const App = ( { first }) => (
       <GreetingContainer />
       <Route exact path='/' component={ Masthead }/>
       <Route path='/patterns' component={ PatternListContainer } />
+      <Route path='/patterns/:patternId'component={ PatternItemContainer } />
       <Footer />
     </header>
   </div>
 );
 
 export default App;
-
-// <Route path='/patterns/:patternId'component={ PatternItemContainer } />

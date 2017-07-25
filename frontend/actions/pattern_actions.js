@@ -22,7 +22,7 @@ export const fetchPatterns = () => dispatch => {
 };
 
 export const fetchPattern = id => dispatch => (
-  APIUtil.fetchPattern(id).then(pattern => dispatch(receivePattern(pattern)))
+  APIUtil.fetchOnePattern(id).then(pattern => dispatch(receivePattern(pattern)))
 );
 
 export const fetchSearchedPatterns = searchWords => dispatch => (

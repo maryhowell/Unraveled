@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import PatternList from './pattern_list';
-
+import { withRouter } from 'react-router';
 // Actions
 import { selectAllPatterns } from '../../reducers/selectors';
 import { fetchPatterns, fetchPattern } from '../../actions/pattern_actions';
+
 
 const mapStateToProps = state => ({
   patterns: selectAllPatterns(state),
@@ -15,7 +16,7 @@ const mapDispatchToProps = dispatch => ({
   fetchSearchedPatterns: searchWords => dispatch(fetchSearchedPatterns(searchWords))
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(PatternList);
+)(PatternList));
