@@ -8,6 +8,7 @@ import AuthModal from './modals/auth_modal';
 import Masthead from './masthead/masthead';
 import Footer from './footer/footer';
 import PatternListContainer from './patterns/pattern_list_container';
+import PatternItemContainer from './patterns/pattern_item_container';
 
 
 const App = ( { first }) => (
@@ -24,3 +25,5 @@ const App = ( { first }) => (
 );
 
 export default App;
+
+// <Route path='/patterns/:patternId'component={ PatternItemContainer } />

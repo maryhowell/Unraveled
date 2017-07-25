@@ -8,7 +8,7 @@ const PatternIndexPattern = ({ pattern }) => {
 
         <li className='pattern-image'>
             <Link to={ `/patterns/${pattern.id}` }>
-              <img src={ pattern.image_url[0] } alt={ pattern.name } />
+              <img className="image" src={ pattern.image_url[0] } alt={ pattern.name } />
             </Link>
             <p className='pattern-name'>{ pattern.name }</p>
         </li>
