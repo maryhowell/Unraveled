@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+a {
+  text-decoration: none;
+}
+
 .patterns-index {
   display: flex;
   justify-content: center;
@@ -16,7 +20,8 @@
 
 .pattern-image {
   margin: 10px;
-  height: 50%
+  height: 50%;
+
 }
 
 .pattern-name {
@@ -32,22 +37,50 @@
 }
 
 img.image {
-    height: 375px;
-    width: auto;
+    // height: 375px;
+    // width: auto;
   }
 
-a {
-  text-decoration: none;
+.pattern-show-top {
+  display: inline-flex;
+    background-color: #f2f3f2;
 }
 
 .pattern-show {
-  background-color: #f2f3f2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  font-size: 14.5px;
+
+}
+
+.pattern-show-name {
+  text-align: center;
+}
+
+.pattern-show-price {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+.pattern-show-description {
+  border-top: 1px solid #c7cad3;
+  padding: 10%;
+}
+
+.pattern-show-details {
+  border-top: 1px solid #c7cad3;
+  width: 383px;
+   height: auto;
+   margin: 34px;
 }
 
 .pattern-show-image {
-  justify-content: space-around;
   display: flex;
-  padding-top: 5%;
-  margin-right: 43%;
+   justify-content: center;
+   margin: 34px 0 34px 34px;
+   border-radius: 4px;
 
 }

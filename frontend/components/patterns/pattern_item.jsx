@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 class PatternItem extends Component {
   componentDidMount() {
-    if (this.patterns){
-    this.props.fetchPattern(this.patterns.id);
-  }
+
+    this.props.fetchPattern(this.props.match.params.patternId);
+
 }
 
   render() {
@@ -13,6 +13,7 @@ class PatternItem extends Component {
 
     if (pattern) {
       return (
+
         <div className='pattern-show'>
           <div className='pattern-show-top'>
             <div className='pattern-show-image'>
@@ -20,9 +21,8 @@ class PatternItem extends Component {
             </div>
             <div className='pattern-show-details'>
               <ul>
-                <li>{ pattern.name }</li>
-                <li className='pattern-show-price'>{ `$${pattern.price}.00` }</li>
-
+                <li className='pattern-show-name'>{ pattern.name }</li>
+                <li className='pattern-show-price'>{ `$${pattern.price}.00` } (PDF DOWNLOAD)</li>
               </ul>
               <div className='pattern-show-description'>{ pattern.short_description }</div>
             </div>

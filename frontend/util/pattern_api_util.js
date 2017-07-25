@@ -9,7 +9,7 @@ export const fetchPatterns = () => {
 export  const fetchOnePattern = (id) => {
   return $.ajax({
     method: 'GET',
-    url: `api/pattern/${id}`
+    url: `api/patterns/${id}`
   });
 };
 
