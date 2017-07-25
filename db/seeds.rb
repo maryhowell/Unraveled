@@ -78,7 +78,7 @@ user8 = User.create!(
 )
 
 pattern0 = Pattern.create!(
-  seller_id: 1,
+  seller_id: Demo.id,
   name: "Carpeaux",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500928568/carpeaux_1_medium2_tplwdd.jpg",
               "https://res.cloudinary.com/unravled/image/upload/v1500928568/carpeaux_2_medium2_fltttm.jpg",
@@ -88,7 +88,7 @@ pattern0 = Pattern.create!(
 )
 
 pattern1 = Pattern.create!(
-  seller_id: 2,
+  seller_id: user8.id,
   name: "Yane",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500928578/Yane_01_medium2_sj7m4n.jpg",
               "https://res.cloudinary.com/unravled/image/upload/v1500928578/Yane_02_medium2_vnefqz.jpg",
@@ -98,7 +98,7 @@ pattern1 = Pattern.create!(
 )
 
 pattern3 = Pattern.create!(
-  seller_id: 3,
+  seller_id: user5.id,
   name: "Carpino",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500928553/Carpino_2_medium2_ju6ebk.jpg",
               "https://res.cloudinary.com/unravled/image/upload/v1500928553/Carpino_1_small2_a0ha3o.jpg",
@@ -108,7 +108,7 @@ pattern3 = Pattern.create!(
 )
 
 pattern4 = Pattern.create!(
-  seller_id: 4,
+  seller_id: user2.id,
   name: "Guernsey",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500954695/guernsey_wrap_1_medium2_nqx6hk.jpg",
               "https://res.cloudinary.com/unravled/image/upload/v1500954695/guernsey_wrap_3_medium2_mapy3w.jpg",
@@ -119,7 +119,7 @@ pattern4 = Pattern.create!(
 
 
 pattern5 = Pattern.create!(
-  seller_id: 5,
+  seller_id: user3.id,
   name: "Terra",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500954832/terra_1_medium2_ycqocg.jpg",
               "https://res.cloudinary.com/unravled/image/upload/v1500954832/terra_2_medium2_uab0ck.jpg",
@@ -129,7 +129,7 @@ pattern5 = Pattern.create!(
 )
 
 pattern6 = Pattern.create!(
-  seller_id: 6,
+  seller_id: user5.id,
   name: "Breslin",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500954991/breslin_03_medium2_srhiwl.jpg",
               "https://res.cloudinary.com/unravled/image/upload/v1500954991/breslin_01_medium2_f44hvl.jpg",
@@ -139,7 +139,7 @@ pattern6 = Pattern.create!(
 )
 
 pattern7 = Pattern.create!(
-  seller_id: 7,
+  seller_id: user7.id,
   name: "Far Hills",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500955160/far_hills_hat_01_medium2_xpihuc.jpg",
               "https://res.cloudinary.com/unravled/image/upload/v1500955160/far_hills_hat_02_medium2_tbeglc.jpg",

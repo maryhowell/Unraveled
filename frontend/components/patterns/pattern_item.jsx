@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-const FontAwesome = require('react-fontawesome');
+
 
 class PatternItem extends Component {
   componentDidMount() {
@@ -17,9 +17,7 @@ class PatternItem extends Component {
 
         <div className='pattern-show'>
           <div className='pattern-show-top'>
-            <a className='back-button' href='#/patterns'>
-              <FontAwesome className='fa-long-arrow-left ' class="fa-long-arrow-left " aria-hidden="true" />
-            </a>
+              <a className='fa-long-arrow-left fa-2x back-button' aria-hidden="true" href='#/patterns' />
             <div className='pattern-show-image'>
               <img src={ pattern.image_url[0] } alt={ pattern.name } />
             </div>
