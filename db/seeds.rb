@@ -71,9 +71,9 @@ user7 = User.create!(
 )
 
 user8 = User.create!(
-  first_name: "Laurie",
-  last_name: "Smithy",
-  email: "c@gmail.com",
+  first_name: "Dallas",
+  last_name: "Hall",
+  email: "uuggghhh@gmail.com",
   password: "12345678"
 )
 
