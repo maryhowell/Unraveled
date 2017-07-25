@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+
 class PatternItem extends Component {
   componentDidMount() {
 
@@ -20,9 +21,10 @@ class PatternItem extends Component {
               <img src={ pattern.image_url[0] } alt={ pattern.name } />
             </div>
             <div className='pattern-show-details'>
-              <ul>
-                <li className='pattern-show-name'>{ pattern.name }</li>
+              <ul className='top-description'>
+                <h2 className='pattern-show-name'>{ pattern.name }</h2>
                 <li className='pattern-show-price'>{ `$${pattern.price}.00` } (PDF DOWNLOAD)</li>
+                <li className='cart-button'> Add to Cart button</li>
               </ul>
               <div className='pattern-show-description'>{ pattern.short_description }</div>
             </div>
@@ -39,5 +41,5 @@ class PatternItem extends Component {
 
 export default PatternItem;
 
-
-// <li className='pattern-show-seller'>{ `${pattern.seller.first_name} ${pattern.seller.last_name}` }</li>
+// import CartItemFormContainer from '../cart_items/cart_item_form_container';
+  // <CartItemFormContainer />
