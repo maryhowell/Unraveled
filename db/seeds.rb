@@ -70,13 +70,6 @@ user7 = User.create!(
   password: "12345678"
 )
 
-user8 = User.create!(
-  first_name: "Dallas",
-  last_name: "Hall",
-  email: "uuggghhh@gmail.com",
-  password: "12345678"
-)
-
 pattern0 = Pattern.create!(
   seller_id: demo.id,
   name: "Carpeaux",
@@ -88,7 +81,7 @@ pattern0 = Pattern.create!(
 )
 
 pattern1 = Pattern.create!(
-  seller_id: user8.id,
+  seller_id: user4.id,
   name: "Yane",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500928578/Yane_01_medium2_sj7m4n.jpg",
               "https://res.cloudinary.com/unravled/image/upload/v1500928578/Yane_02_medium2_vnefqz.jpg",
