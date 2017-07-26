@@ -58,7 +58,7 @@ const signedInGreeting = (currentUser, logout) => (
          </Link>
        </li>
        <li>
-         <Link className='cart-link' to='/cart'>
+         <Link className='cart-link' to='/checkout'>
            <ul className='cart'>
              <li>
                <i className='fa fa-shopping-cart' name='fa-shopping-cart' aria-hidden='true' />

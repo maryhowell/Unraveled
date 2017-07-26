@@ -1,22 +1,20 @@
-export const fetchCarts = () => {
+export const getCart = (id) => {
   return $.ajax({
     method: 'GET',
-    url: 'api/carts'
+    url: `/api/cart/${id}`
   });
 };
 
-export const createCart = cart => {
-  return $.ajax({
-    method: 'POST',
-    url: 'api/carts',
-    data: { cart }
-  });
-};
-
-export const updateCart = cart => {
+export const submitCart = (id) => {
   return $.ajax({
     method: 'PATCH',
-    url: `api/carts/${cart.id}`,
-    data: { cart }
+    url: `/api/cart/${id}`
+  });
+};
+
+export const getPrevCarts = () => {
+  return $.ajax({
+    method: 'GET',
+    url: `api/cart`
   });
 };

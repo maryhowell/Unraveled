@@ -1,4 +1,6 @@
 import * as APIUtil from '../util/session_api_util'
+import { hashHistory } from 'react-router';
+import { getCart, removeCart } from './cart_actions';
 
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
@@ -33,6 +35,11 @@ export const login = user => dispatch => (
     dispatch(receiveErrors(err.responseJSON))
   ))
 );
+
+export const updateCurrentUser = (id) => dispatch => (
+  SessionApiUtil.showUser(id)
+    .then(user => dispatch(receiveCurrentUser(user)))
+)
 
 export const logout = () => dispatch => (
   APIUtil.logout().then(user => (

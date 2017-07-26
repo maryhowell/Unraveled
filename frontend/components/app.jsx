@@ -9,7 +9,8 @@ import Masthead from './masthead/masthead';
 import Footer from './footer/footer';
 import PatternListContainer from './patterns/pattern_list_container';
 import PatternItemContainer from './patterns/pattern_item_container';
-
+import CheckoutContainer from './carts/checkout_container';
+import PrevCartsContainer from './carts/prevcarts_container';
 
 const App = ( { first }) => (
   <div>
@@ -21,12 +22,15 @@ const App = ( { first }) => (
       <Route exact path='/' component={ Masthead }/>
       <Route path='/patterns/:patternId'component={ PatternItemContainer } />
       <Route path='/patterns' component={ PatternListContainer } />
-
     </Switch>
-
+    <Route path="/checkout" component= { CheckoutContainer }/>
+    <Route path="/prevorders" component= { PrevCartsContainer }/>
     </header>
   </div>
 );
 
 export default App;
-  // <Footer />
+
+ // onEnter={ _ensureSignedIn }
+      // <Route path='/cart' component={ CartsIndexContainer }/>
+// import CartsIndexContainer from './carts/carts_index_container';

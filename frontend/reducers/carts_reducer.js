@@ -1,18 +1,17 @@
-import { RECEIVE_CART, RECEIVE_CARTS } from '../actions/cart_actions';
-import merge from 'lodash/merge';
+import { RECEIVE_CART, RECEIVE_PREV_CARTS } from '../actions/cart_actions';
+import { merge } from 'lodash';
 
-const CartsReducer = (state = {}, action) => {
-  Object.freeze(state);
-
-  switch(action.type) {
+const CartReducer = (oldState = {}, action) => {
+  Object.freeze(oldState);
+  switch (action.type) {
     case RECEIVE_CART:
-      const newCart = { [action.cart.id]: action.cart };
-      return merge({}, state, newCart);
-    case RECEIVE_CARTS:
-      return action.carts;
+      return Object.assign({}, oldState, {cart: action.cart});
+    case RECEIVE_PREV_CARTS:
+      return Object.assign({}, oldState, {prevCarts: action.prevCarts});
     default:
-      return state;
+      return oldState;
   }
 };
 
-export default CartsReducer;
+
+export default CartReducer;
