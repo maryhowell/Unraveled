@@ -7,3 +7,6 @@ export const selectPattern = ({ patterns }, id) => {
   const pattern = patterns[id]
   return pattern;
 }
+
+export const selectCartItems = ({ cartItems }) => values(cartItems);
+export const selectCarts = ({ carts }) => values(carts);

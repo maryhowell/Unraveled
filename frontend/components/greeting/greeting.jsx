@@ -49,7 +49,7 @@ const signedInGreeting = (currentUser, logout) => (
        <li className='user'>
          <ul>
 
-           <li>{`${currentUser.first_name}`}</li>
+           <li>{`${currentUser.email}`}</li>
          </ul>
        </li>
        <li>
