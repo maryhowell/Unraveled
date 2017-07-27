@@ -1,7 +1,7 @@
 export const fetchReviews = itemId => {
   return $.ajax({
     method: 'GET',
-    url: `api/patterns/${itemId}/reviews`,
+    url: `api/patterns/${itemId}/reviews`
   });
 };
 
