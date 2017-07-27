@@ -32,11 +32,11 @@ class PatternItem extends Component {
             </div>
           </div>
           <div className='item-reviews'>
-            <ReviewIndexContainer patternId={ pattern.id }/>
+            <ReviewIndexContainer itemId={ pattern.id }/>
           </div>
           <ul className='cart-item-review'>
             <li>
-              <ReviewFormContainer/>
+      <ReviewFormContainer/> 
             </li>
           </ul>
         </div>

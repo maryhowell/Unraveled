@@ -9,7 +9,7 @@ class ReviewIndex extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchReviews(this.props.itemId);
+    this.props.fetchReviews(this.props.patternId);
   }
 
   render() {

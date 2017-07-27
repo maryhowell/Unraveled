@@ -140,3 +140,40 @@ pattern7 = Pattern.create!(
   short_description: "This deeply textured beanie uses the same beaded cable found on the Far Hills Scarf, so you can knit a matched set. Here the cable is reinterpreted as chains of diminishing horseshoes that encircle the hat as they climb to the crown. A tubular cast-on yields a durable double-rib edge that’s elastic enough to fit most adult heads. The hat is worked from a large chart in two skeins of Shelter.",
   price: 8.00,
 )
+
+review1 = Review.create!(
+  item_id: 1,
+  user_id: 1,
+  description: "It is late"
+)
+
+review2 = Review.create!(
+  item_id: 2,
+  user_id: 2,
+  description: "It is late"
+)
+review24 = Review.create!(
+  item_id: 3,
+  user_id: 3,
+  description: "It is late"
+)
+review3 = Review.create!(
+  item_id: 4,
+  user_id: 4,
+  description: "It is late"
+)
+review4 = Review.create!(
+  item_id: 5,
+  user_id: 5,
+  description: "It is late"
+)
+review5 = Review.create!(
+  item_id: 6,
+  user_id: 6,
+  description: "It is late"
+)
+review6 = Review.create!(
+  item_id: 7,
+  user_id: 7,
+  description: "It is late"
+)

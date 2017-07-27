@@ -11,7 +11,6 @@ class ReviewForm extends React.Component {
       description: ''
     };
 
-    this.handleRate = this.handleRate.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
 
@@ -32,16 +31,13 @@ class ReviewForm extends React.Component {
     this.props.createReview(review);
   }
 
-  navigateToCartItem() {
-    this.props.router.history(`/patterns/${this.props.patternId}`);
-  }
 
   render() {
     return (
 
       <form onSubmit={ this.handleSubmit }>
         <ul>
-          <li>Description</li>
+          <li>Leave A Review</li>
           <li>
             <textarea
               className='review-description'
