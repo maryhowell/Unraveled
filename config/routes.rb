@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :carts, only: [:create, :index, :update]
     resources :cart_items, only: [:index, :create, :update, :destroy]
     resources :reviews, only: [:show, :create, :update, :destroy]
+    resources :favorites, only: [:show, :index, :destroy]
 
   end
 
