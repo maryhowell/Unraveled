@@ -1,7 +1,7 @@
 // Place all the styles related to the review controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.cart-item-review{
+.item-review{
   display: flex;
   justify-content: center;
   /* margin-left: 20%; */
@@ -12,6 +12,8 @@
   padding: 0;
   margin: 0;
   border-top: 1px solid #c7cad3;
+  padding-top: 24px;
+    padding-bottom: 17px;
 }
 
 .reviews-section {
@@ -43,13 +45,15 @@
 }
 
 .review-header {
-  padding: 29px 17px 26px 0;
+  padding: 29px 17px 5px 0;
   font-size: 22px;
   color: #000000;
+  margin-left: 71px;
 }
 
 .reviews > li {
   margin-bottom: 17px;
+  padding: 0px 17px 24px 10px;
 }
 
 .reviews > li:last-child {
