@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const deletebutton = (review, deleteReview, currentUser) => {
-  console.log(currentUser.id);
-  console.log(review.user.id);
   if (currentUser.id === review.user.id) {
      return <button className='deletereviewbutton'
                     onClick={() => deleteReview(review.id)}>X</button>
