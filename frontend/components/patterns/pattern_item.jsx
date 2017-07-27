@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-
+import ReviewFormContainer from '../reviews/review_form_container';
+import ReviewIndexContainer from '../reviews/review_index_container';
 class PatternItem extends Component {
   componentDidMount() {
 
@@ -30,7 +31,16 @@ class PatternItem extends Component {
               <div className='pattern-show-description'>{ pattern.short_description }</div>
             </div>
           </div>
+          <div className='item-reviews'>
+            <ReviewIndexContainer patternId={ pattern.id }/>
+          </div>
+          <ul className='cart-item-review'>
+            <li>
+              <ReviewFormContainer/>
+            </li>
+          </ul>
         </div>
+
       );
     } else {
       return (
