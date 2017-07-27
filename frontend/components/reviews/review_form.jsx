@@ -22,35 +22,26 @@ class ReviewForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-
     const review = {
-      item_id: this.props.itemId,
+      item_id: this.props.match.params.patternId,
       description: this.state.description
     };
 
     this.props.createReview(review);
   }
 
-
   render() {
     return (
 
       <form onSubmit={ this.handleSubmit }>
-        <ul>
+        <ul className='rewiew-form-container'>
           <li>Leave A Review</li>
           <li>
             <textarea
-              className='review-description'
-              value={ this.state.description }
-              onChange={ this.handleChange }
-            />
+              className='review-description' value={ this.state.description } onChange={ this.handleChange }/>
           </li>
           <li>
-            <input
-              className='submit-button'
-              type='submit'
-              value='Submit review'
-            />
+            <input className='submit-button' type='submit' value='Submit review'/>
           </li>
         </ul>
       </form>

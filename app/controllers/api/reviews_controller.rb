@@ -1,7 +1,7 @@
 class Api::ReviewsController < ApplicationController
   def index
      params.has_key?(:item_id)
-      @reviews = Review.where(item_id: params[:item_id])
+      @reviews = Review.where(item_id: params[:pattern_id])
     # else
     #   @reviews = current_user.reviews
     # end
@@ -15,7 +15,7 @@ class Api::ReviewsController < ApplicationController
   end
 
   def create
-    @review = current_user.reviews.new(review_params)
+    @review = Review.new(review_params)
     @review.user_id = current_user.id
 
     if @review.save

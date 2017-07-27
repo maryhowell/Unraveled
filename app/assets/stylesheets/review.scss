@@ -1,3 +1,38 @@
 // Place all the styles related to the review controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.cart-item-review{
+  display: flex;
+  margin-left: 20%;
+  padding: 0;
+  flex-wrap: wrap;
+  background-color:white;
+  text-decoration: none;
+  width: 100%;
+  padding: 2%;
+}
+
+.submit-button {
+  text-align: center;
+  border: 1px solid black;
+  background-color: #f2f3f2;
+  font-size: 1em;
+
+}
+
+.review-description{
+  width: 400%;
+}
+
+.item-reviews{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.reviews{
+  display: flex;
+position: relative;
+margin-left: 34px;
+color: #000000;
+}

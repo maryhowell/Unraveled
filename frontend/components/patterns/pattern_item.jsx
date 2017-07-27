@@ -7,7 +7,7 @@ class PatternItem extends Component {
   componentDidMount() {
 
     this.props.fetchPattern(this.props.match.params.patternId);
-
+    this.props.fetchReviews(this.props.match.params.patternId);
 }
 
   render() {
@@ -36,7 +36,7 @@ class PatternItem extends Component {
           </div>
           <ul className='cart-item-review'>
             <li>
-      <ReviewFormContainer/> 
+              <ReviewFormContainer/>
             </li>
           </ul>
         </div>

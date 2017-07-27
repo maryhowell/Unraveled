@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   before_validation :ensure_session_token_uniqueness
 
   has_many :patterns, foreign_key: :seller_id, class_name: :Pattern
+  has_many :reviews
 
   def password=(password)
     self.password_digest = BCrypt::Password.create(password)

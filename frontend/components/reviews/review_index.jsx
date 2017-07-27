@@ -8,9 +8,7 @@ class ReviewIndex extends Component {
     super(props);
   }
 
-  componentDidMount() {
-    this.props.fetchReviews(this.props.patternId);
-  }
+
 
   render() {
     const { reviews } = this.props;
