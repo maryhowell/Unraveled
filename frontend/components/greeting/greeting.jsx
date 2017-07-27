@@ -16,7 +16,7 @@ const signedOutGreeting = login => (
 
     <ul>
         <nav className="login-signup-buttons">
-          <button className="demobutton" onClick={ () => login({user:{ email: 'DemoUser@gmail.com', password: '12345678'} })}>Demo</button>
+          <button className="demobutton" onClick={ () => login({user:{ email: 'Demo@gmail.com', password: '12345678'} })}>Demo</button>
           &nbsp;
           <AuthModalContainer formType="login"/>
           &nbsp;
