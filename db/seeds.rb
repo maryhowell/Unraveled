@@ -9,7 +9,7 @@
 demo = User.create!(
   first_name: "Demo",
   last_name: "User",
-  email: "DemoUser@gmail.com",
+  email: "Demo@gmail.com",
   password: "12345678"
 )
 
@@ -17,56 +17,56 @@ demo = User.create!(
 user0 = User.create!(
   first_name: "John",
   last_name: "Jacob",
-  email: "yo@gmail.com",
+  email: "Jeff@gmail.com",
   password: "12345678"
 )
 
 user1 = User.create!(
   first_name: "Mable",
   last_name: "Smith",
-  email: "asffg@gmail.com",
+  email: "mable@gmail.com",
   password: "12345678"
 )
 
 user2 = User.create!(
   first_name: "Laurie",
   last_name: "Smithy",
-  email: "klrguhvgd@gmail.com",
+  email: "jessica@gmail.com",
   password: "12345678"
 )
 
 user3 = User.create!(
   first_name: "John",
   last_name: "Jacob",
-  email: "fgjb@gmail.com",
+  email: "Dallas@gmail.com",
   password: "12345678"
 )
 
 user4 = User.create!(
   first_name: "Mable",
   last_name: "Smith",
-  email: "jkzfsb@gmail.com",
+  email: "Jules@gmail.com",
   password: "12345678"
 )
 
 user5 = User.create!(
   first_name: "Laurie",
   last_name: "Smithy",
-  email: "dKBFS@gmail.com",
+  email: "Hope@gmail.com",
   password: "12345678"
 )
 
 user6 = User.create!(
   first_name: "John",
   last_name: "Jacob",
-  email: "dsv@gmail.com",
+  email: "Kelly@gmail.com",
   password: "12345678"
 )
 
 user7 = User.create!(
   first_name: "Mable",
   last_name: "Smith",
-  email: "b@gmail.com",
+  email: "David@gmail.com",
   password: "12345678"
 )
 
@@ -144,36 +144,36 @@ pattern7 = Pattern.create!(
 review1 = Review.create!(
   item_id: 1,
   user_id: 1,
-  description: "It is late"
+  description: "Great sweater"
 )
 
 review2 = Review.create!(
   item_id: 2,
   user_id: 2,
-  description: "It is late"
+  description: "Love this!"
 )
 review24 = Review.create!(
   item_id: 3,
   user_id: 3,
-  description: "It is late"
+  description: "OMG I want to make this so bad"
 )
 review3 = Review.create!(
   item_id: 4,
   user_id: 4,
-  description: "It is late"
+  description: "I love this design"
 )
 review4 = Review.create!(
   item_id: 5,
   user_id: 5,
-  description: "It is late"
+  description: "I want to make one for my boyfriend"
 )
 review5 = Review.create!(
   item_id: 6,
   user_id: 6,
-  description: "It is late"
+  description: "Love the details"
 )
 review6 = Review.create!(
   item_id: 7,
   user_id: 7,
-  description: "It is late"
+  description: "This is the best!"
 )
