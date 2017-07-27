@@ -7,7 +7,7 @@ import ReviewIndexItem from './review_index_item';
 const mapStateToProps = (state, ownProps) => ({
   reviews: selectReviews(state),
   patternId: ownProps.patternId,
-
+  currentUser: state.session.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -19,5 +19,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(ReviewIndexItem);
-
-  // currentUser: state.session.currentUser

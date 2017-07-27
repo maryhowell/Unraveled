@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const deletebutton = ({ review, deleteReview, currentUser }) => {
+const deletebutton = (review, deleteReview, currentUser) => {
+  console.log(currentUser.id);
+  console.log(review.user.id);
   if (currentUser.id === review.user.id) {
-     return <button className='deleteButton'
-                    onClick={deleteReview}>X</button>
+     return <button className='deletereviewbutton'
+                    onClick={() => deleteReview(review.id)}>X</button>
                 };
 }
 
@@ -20,10 +22,10 @@ const ReviewIndexItem = ({ review, deleteReview, currentUser }) => {
           <li>{ review.description }</li>
         </ul>
         <ul className='reviewer-review-date'>
-          <li>{ review.review_date.slice(0, 10) }</li>
-            { deletebutton }
+          <li>{ review.review_date.slice(0, 10) }
+            { deletebutton(review, deleteReview, currentUser) }
+          </li>
         </ul>
-
       </div>
     </li>
   );

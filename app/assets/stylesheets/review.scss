@@ -100,7 +100,7 @@
 
 .reviewer-review-date {
   position: absolute;
-  margin-left: 708px;
+  margin-left: 690px;
 }
 
 @media only screen
@@ -110,4 +110,14 @@
       width: 93px;
       height: 15px;
     }
+}
+
+.deletereviewbutton {
+  padding: 11px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 3px;
+    border: none;
+    background-color: #f2f3f2;
 }
