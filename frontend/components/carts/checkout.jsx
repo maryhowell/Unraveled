@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { hashHistory } from 'react-router';
 
 import { deleteItem } from '../../util/cart_item_api_util'
@@ -82,7 +82,12 @@ class Checkout extends React.Component{
   emptyCart(){
     this.costArray = [];
     return(
+      <div className='outer-checkout-empty'>
+        <div className='inner-checkout-empty'>
         <h1>Your cart is empty!</h1>
+        <Link className='return-shop' to='/patterns'>return to shop</Link>
+        </div>
+      </div>
     )
   }
 
