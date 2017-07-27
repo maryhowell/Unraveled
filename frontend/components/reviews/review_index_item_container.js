@@ -2,12 +2,12 @@ import { connect } from 'react-redux';
 
 import { selectReviews } from '../../reducers/selectors';
 import { fetchReviews,deleteReview } from '../../actions/review_actions';
-import ReviewIndex from './review_index';
+import ReviewIndexItem from './review_index_item';
 
 const mapStateToProps = (state, ownProps) => ({
   reviews: selectReviews(state),
   patternId: ownProps.patternId,
-  currentUser: state.session.currentUser
+
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -18,4 +18,6 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(ReviewIndex);
+)(ReviewIndexItem);
+
+  // currentUser: state.session.currentUser

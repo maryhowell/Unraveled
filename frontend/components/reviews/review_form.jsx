@@ -30,21 +30,36 @@ class ReviewForm extends React.Component {
     this.props.createReview(review);
   }
 
+   formSignedIn(currentUser){
+    if( currentUser) {
+      return (
+        <form onSubmit={ this.handleSubmit }>
+          <ul className='rewiew-form-container'>
+            <li>Leave A Review</li>
+            <li>
+              <textarea
+                className='review-description' value={ this.state.description } onChange={ this.handleChange }/>
+            </li>
+            <li>
+              <input className='submit-button' type='submit' value='Submit review'/>
+            </li>
+          </ul>
+        </form>
+      );
+    }else{
+        return (
+         <ul className='rewiew-form-container'>
+          <li>Please Sign In to Leave A Review</li>
+        </ul>
+      );
+    }
+  }
+
   render() {
     return (
-
-      <form onSubmit={ this.handleSubmit }>
-        <ul className='rewiew-form-container'>
-          <li>Leave A Review</li>
-          <li>
-            <textarea
-              className='review-description' value={ this.state.description } onChange={ this.handleChange }/>
-          </li>
-          <li>
-            <input className='submit-button' type='submit' value='Submit review'/>
-          </li>
-        </ul>
-      </form>
+      <div>
+      { this.formSignedIn(this.props.currentUser) }
+      </div>
     );
   }
 }

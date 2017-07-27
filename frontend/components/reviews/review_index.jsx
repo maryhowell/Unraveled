@@ -11,14 +11,17 @@ class ReviewIndex extends Component {
 
 
   render() {
-    const { reviews } = this.props;
-
+    const { reviews, currentUser, deleteReview } = this.props;
     const reviewCount = reviews.length;
 
     return (
       <section className='reviews-section'>
         <ul className='reviews'>
-          { reviews.reverse().map(review => <ReviewIndexItem key={review.id} review={review} />)}
+          { reviews.reverse().map(review => <ReviewIndexItem key={review.id}
+            review={review}
+            deleteReview={deleteReview}
+            currentUser={currentUser} />
+          )}
         </ul>
       </section>
     );
