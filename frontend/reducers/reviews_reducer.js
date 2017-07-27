@@ -6,7 +6,6 @@ const ReviewsReducer = (state = {}, action) => {
 
   switch(action.type) {
     case RECEIVE_REVIEWS:
-    console.log(action.reviews);
       return action.reviews;
     case RECEIVE_REVIEW:
       const newReview = { [action.review.id]: action.review };
