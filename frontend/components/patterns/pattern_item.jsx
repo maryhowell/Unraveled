@@ -19,6 +19,7 @@ class PatternItem extends React.Component {
     if (this.props.currentUser) {
       this.props.fetchFavorite(this.props.match.params.patternId);
     }
+    window.scrollTo(0,0);
   }
 
   componentWillReceiveProps(nextProps) {

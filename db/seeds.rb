@@ -57,14 +57,14 @@ user4 = User.create!(
 user5 = User.create!(
   first_name: "Laurie",
   last_name: "Smithy",
-  email: "Hope@gmail.com",
+  email: "Evie@gmail.com",
   password: "12345678"
 )
 
 user6 = User.create!(
   first_name: "John",
   last_name: "Jacob",
-  email: "Kelly@gmail.com",
+  email: "Luke@gmail.com",
   password: "12345678"
 )
 
@@ -178,6 +178,77 @@ pattern11 = Pattern.create!(
   price: 9.00,
 )
 
+pattern12 = Pattern.create!(
+  seller_id: user6.id,
+  name: "Ronan",
+  image_url: ["https://10084-presscdn-0-93-pagely.netdna-ssl.com/wp-content/uploads/2017/05/ronan_01-600x900.jpg"],
+  short_description: "This open-front drop-yoke cardigan is the height of snuggly fashion. The brioche shawl collar, shaped with simple short rows, sweeps back to form pockets at the hem, and the sleeves begin below the elbows to create a cape-like silhouette. Tiny gutters of purl stitches trace a flattering A-line from hem to neckline within the volume of the coat. Top-down seamless construction makes Ronan a straightforward knit, and woolen-spun Shelter keeps the fabric light and airy despite the generous ease and long length.",
+  price: 9.00
+)
+
+pattern13 = Pattern.create!(
+  seller_id: user5.id,
+  name: "Ilia",
+  image_url: ["https://10084-presscdn-0-93-pagely.netdna-ssl.com/wp-content/uploads/2017/01/ilia_01-600x900.jpg"],
+  short_description: "Add structural flair to your wardrobe with a plush cabled cardigan. Wide bands of front ribbing fold back to form a collar and create an architectural silhouette. The densely worked fabric features rope cables spliced into a lattice for vivid texture and cozy warmth. Ilia’s boxy fit makes for easy layering; the fronts may be pinned to close if you wish, so choose a size that gives you 3-5″ of ease with the fronts overlapped.",
+  price: 9.00
+)
+
+pattern14 = Pattern.create!(
+  seller_id: user4.id,
+  name: "Prime",
+  image_url: ["https://10084-presscdn-0-93-pagely.netdna-ssl.com/wp-content/uploads/2016/12/prime_01-600x900.jpg"],
+  short_description: "Prime is a textural riff on our favorite boxy pullovers. Welts on the lower torso are halved by a narrow vertical element, while the yoke is in clean stockinette fabric. Exaggerated drop shoulders and just a hint of A-line shaping through the torso finesse the roomy fit, and the light warmth of Loft makes this an easy piece to incorporate into your wardrobe. Double-deep single ribbing on the hem and bracelet-length cuffs further heightens the geometry, and transitions in fabric are subtly marked by a lateral braid. All pieces are knit flat and seamed, with the neckband worked in the round after assembly.",
+  price: 9.00
+)
+
+pattern15 = Pattern.create!(
+  seller_id: user2.id,
+  name: "Binary",
+  image_url: ["https://10084-presscdn-0-93-pagely.netdna-ssl.com/wp-content/uploads/2016/12/binary_01-600x900.jpg"],
+  short_description: "Sequence knitting can create familiar textured fabrics or break with traditional patterning and take flight in organic forms. This scarf (or wrap, if you opt for a larger scale) pairs alternating charted motifs to form a patchwork of flowing wavelets and more structured pennants. The reversible fabric is subtly different but equally handsome on both sides. Worsted-spun Arbor renders the stitches in high relief, and simple slipped-stitch edges keep the focus on the novel textures.",
+  price: 8.00
+)
+
+pattern16 = Pattern.create!(
+  seller_id: user1.id,
+  name: "Foundry",
+  image_url: ["https://10084-presscdn-0-93-pagely.netdna-ssl.com/wp-content/uploads/2016/10/foundry_4-600x900.jpg"],
+  short_description: "Wrap up in a big luscious stole with an architectural motif of traveling ribs that gather and diverge. The deep texture adds cozy warmth as well as visual interest, and the charted motif is easily memorized after a few repetitions. Foundry is built with thoughtful details like slipped rib selvedges that keep the long sides straight and tidy, and buttons allow for converting the scarf to an oversized cowl.",
+  price: 8.00
+)
+
+pattern17 = Pattern.create!(
+  seller_id: user4.id,
+  name: "Furrow Cowl",
+  image_url: ["https://10084-presscdn-0-93-pagely.netdna-ssl.com/wp-content/uploads/2016/08/furrow_cowl_02-600x900.jpg"],
+  short_description: "Curl up in this plush, oversized cowl on chilly days. Furrow’s simple stitches make for easy knitting, and a gentle bell shape — achieved by decreases within the moss stitch segments — makes styling effortless. Knit in Shelter to 18” tall, the cowl drapes and folds elegantly, but it can be shortened if you prefer less volume or wish to use a smaller amount of yarn. Pair it with a Furrow Hat for a matched set of accessories.",
+  price: 8.00
+)
+
+pattern18 = Pattern.create!(
+  seller_id: user3.id,
+  name: "Tessera",
+  image_url: ["https://10084-presscdn-0-93-pagely.netdna-ssl.com/wp-content/uploads/2016/08/tessera_01-600x900.jpg"],
+  short_description: "A motif found on a pair of traditional Latvian mittens tessellates across the fabric of this toasty cowl. Accents in a third color lift and energize the fabric, allowing for a wider range of color play. Two of every twelve rounds require working all three colors at once to achieve this effect. The Tessera cowl is worked in Loft from a provisional crochet chain; a subtle funnel shape is achieved by changing needle sizes, and the self-facing is grafted to the cast-on edge for a seamless finish. Counting the fabric layers and the floats sandwiched inside, that’s four layers of wool between you and the elements.",
+  price: 8.00
+)
+
+pattern19 = Pattern.create!(
+  seller_id: user6.id,
+  name: "Halus",
+  image_url: ["https://10084-presscdn-0-93-pagely.netdna-ssl.com/wp-content/uploads/2016/01/Halus_04-600x900.jpg"],
+  short_description: "This one-of-a-kind cap features exaggerated texture and playful use of negative space, with plump chains rising to the crown between ladders of easy lace. The knitting begins with a tubular cast-on and a band of single rib; chains are worked by dropping stitches and hooking them back up in clusters. Quick and so much fun to knit from a single skein of Quarry, Halus is an ideal last-minute gift—and you may find you can’t stop at one.",
+  price: 7.00
+)
+
+patter20 = Pattern.create!(
+  seller_id: user7.id,
+  name: "League",
+  image_url: ["https://10084-presscdn-0-93-pagely.netdna-ssl.com/wp-content/uploads/2016/01/League_01-600x900.jpg"],
+  short_description: "Color blocking achieves stylish new heights in this sporty pullover. The front and back are worked flat in intarsia, with increases and decreases on either side of the color change to achieve a faux-raglan effect. Saddle-shoulder sleeves are knit flat in a third color of Loft. The subtlest of A-line shapes gives League a neat fit that still allows layering over collared shirts.",
+  price: 9.00
+)
 
 review1 = Review.create!(
   item_id: 1,

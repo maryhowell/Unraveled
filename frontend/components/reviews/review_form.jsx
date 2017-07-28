@@ -27,7 +27,7 @@ class ReviewForm extends React.Component {
       description: this.state.description
     };
 
-    this.props.createReview(review);
+    this.props.createReview(review).then(()=> this.setState({ description: "" }));
   }
 
    formSignedIn(currentUser){
