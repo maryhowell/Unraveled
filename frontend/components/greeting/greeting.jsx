@@ -10,7 +10,7 @@ const signedOutGreeting = login => (
     <nav className="navbar">
       <div className="logo">
         <Link to="/">
-          UnRavled
+          UnRaveld
         </Link>
       </div>
 
@@ -37,7 +37,7 @@ const signedInGreeting = (currentUser, logout) => (
     <nav className="navbar">
       <div className="logo">
         <Link to="/">
-          UnRavled
+          UnRaveld
         </Link>
 
       </div>
