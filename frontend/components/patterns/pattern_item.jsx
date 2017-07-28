@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import ReviewFormContainer from '../reviews/review_form_container';
 import ReviewIndexContainer from '../reviews/review_index_container';
+import FavoriteIndexContainer from '../favorites/favorite_index_container';
+
 class PatternItem extends Component {
   componentDidMount() {
 
@@ -23,6 +25,7 @@ class PatternItem extends Component {
               <img src={ pattern.image_url[0] } alt={ pattern.name } />
             </div>
             <div className='pattern-show-details'>
+              <FavoriteIndexContainer/>
               <ul className='top-description'>
                 <h2 className='pattern-show-name'>{ pattern.name }</h2>
                 <li className='pattern-show-price'>{ `$${pattern.price}.00` } (PDF DOWNLOAD)</li>

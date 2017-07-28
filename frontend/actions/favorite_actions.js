@@ -23,14 +23,14 @@ export const fetchFavorites = userId => dispatch => (
   APIUtil.fetchFavorites(userId).then(favorites => dispatch(receiveFavorites(favorites)))
 );
 
-export const fetchFavorite = userId => dispatch => (
-  APIUtil.fetchFavorite(userId).then(favorite => dispatch(receiveFavorite(favorite)))
+export const fetchFavorite = id => dispatch => (
+  APIUtil.fetchFavorite(id).then(favorite => dispatch(receiveFavorite(favorite)))
 );
 
 export const createFavorite = favorite => dispatch => (
   APIUtil.createFavorite(favorite).then(favorite=> dispatch(receiveFavorite(favorite)))
 );
 
-export const deleteFavorite = userId => dispatch => (
-  APIUtil.deleteFavorite(userId).then(favorite => dispatch(removeFavorite(favorite)))
+export const deleteFavorite = id => dispatch => (
+  APIUtil.deleteFavorite(id).then(favorite => dispatch(removeFavorite(favorite)))
 );

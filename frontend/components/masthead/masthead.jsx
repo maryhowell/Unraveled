@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import PatternListContainer from '../patterns/pattern_list_container';
 const Masthead = () => {
   return(
     <header className='masthead'>
@@ -9,7 +9,7 @@ const Masthead = () => {
          <Link  className='shop-link' to='/patterns'>Shop our patterns</Link>
 
       </div>
-
+      <PatternListContainer/>
     </header>
   );
 };

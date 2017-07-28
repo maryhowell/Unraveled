@@ -30,19 +30,29 @@ class PatternIndex extends Component {
       return <div>Loading</div>;
     }
 
-    const { patterns, fewPatterns } = this.props;
+    const { patterns, fewPatterns, favorites } = this.props;
 
     if (this.props.location.pathname === '/') {
       return (
         <section className='section-description-preview'>
           <div className='patterns-index'>
-            <ul>
+            <ul className='something'>
               { fewPatterns.map(pattern => <PatternIndexPattern key={pattern.id} pattern={pattern} />)}
             </ul>
           </div>
         </section>
       );
-    } else {
+    } else if (this.props.location.pathname === '/user') {
+      return (
+        <section className='section-favorites-preview'>
+          <div className='patterns-index'>
+            <ul>
+              { favorites.map(pattern => <PatternIndexPattern key={pattern.id} pattern={pattern} />)}
+            </ul>
+          </div>
+        </section>
+      );
+    }else {
       return (
         <section className='section-description-all'>
           <div >

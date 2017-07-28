@@ -2,13 +2,14 @@ import { connect } from 'react-redux';
 import PatternList from './pattern_list';
 import { withRouter } from 'react-router';
 // Actions
-import { selectAllPatterns } from '../../reducers/selectors';
+import { selectAllPatterns, selectFewPatterns } from '../../reducers/selectors';
 import { fetchPatterns, fetchPattern } from '../../actions/pattern_actions';
 
 
 const mapStateToProps = state => ({
   patterns: selectAllPatterns(state),
-  loading: state.fetching,
+  fewPatterns: selectFewPatterns(state),
+  loading: state.fetching
 });
 
 const mapDispatchToProps = dispatch => ({

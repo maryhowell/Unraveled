@@ -15,12 +15,14 @@ a {
   flex-wrap: wrap;
   background-color: #f2f3f2;
   text-decoration: none;
+  flex-direction: row;
+    align-items: center;
 
 }
 
 .pattern-image {
   margin: 10px;
-  height: 50%;
+
 
 }
 
@@ -34,6 +36,10 @@ a {
   background-color: white;
   position: relative;
   color: black;
+}
+
+.something {
+  display: flex;
 }
 
 img.image {

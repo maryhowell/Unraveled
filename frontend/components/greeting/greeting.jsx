@@ -44,6 +44,7 @@ const signedInGreeting = (currentUser, logout) => (
       <Link className="allpatternsbutton" to="/patterns">
       Shop All Patterns
       </Link>
+
       <nav className='signout-nav'>
      <ul>
        <li className='user'>
@@ -83,18 +84,7 @@ const Greeting = ({ currentUser, logout, login }) => (
 );
 
 export default Greeting;
-//
-// <li>
-//   <i className='fa fa-user-circle-o' name='fa-user-circle-o' aria-hidden='true' />
-// </li>
 
-// <li>
-//   <Link to='/purchased_items'>
-//     <ul className='purchases'>
-//       <li>
-//         <i className='fa fa-credit-card-alt' name='fa-credit-card-alt' aria-hidden='true' />
-//       </li>
-//       <li>Purchases</li>
-//     </ul>
-//   </Link>
-// </li>
+// <Link className="allfavoritesbutton" to=`/user/${currentUser.id}/favorites`>
+// Favorites
+// </Link>

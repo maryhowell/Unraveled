@@ -8,11 +8,8 @@ class ReviewIndex extends Component {
     super(props);
   }
 
-
-
   render() {
     const { reviews, currentUser, deleteReview } = this.props;
-    const reviewCount = reviews.length;
 
     return (
       <section className='reviews-section'>

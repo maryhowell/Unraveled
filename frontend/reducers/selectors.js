@@ -15,3 +15,5 @@ export const selectReviews = ({ reviews }) => values(reviews);
 export const selectReview = ({ reviews }, id) => {
   return reviews[id];
 }
+
+export const selectFavorites = ({ favorites }) => values(favorites);
