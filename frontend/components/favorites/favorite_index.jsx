@@ -15,7 +15,6 @@ class FavoriteIndex extends Component {
 
   render(){
     const { favorites, currentUser, deleteFavorite } = this.props;
-    console.log(this.props.favorites);
     if (this.props.favorites.length === 0) {
       return(
         <div className='outer-favorite-empty'>

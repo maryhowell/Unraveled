@@ -1,8 +1,17 @@
 class Api::FavoritesController < ApplicationController
 
   def index
-    @favorites = Favorite.where(user_id: params[:user_id])
-    render :index
+    if params[:pattern_id]
+      @favorites = current_user.favorites.where(pattern_id: params[:pattern_id])
+      if @favorites
+        render :index
+      else
+        render json: {}
+      end
+    else
+      @favorites = current_user.favorites
+      render :index
+    end
   end
 
   def create
@@ -20,6 +29,10 @@ class Api::FavoritesController < ApplicationController
     @favorite = Favorite.find(params[:id])
     @favorite.destroy
     render :show
+  end
+
+  def show
+    @favorite = Favorite.find(params[:id])
   end
 
   private

@@ -12,6 +12,7 @@ class PatternIndex extends Component {
     //   this.props.fetchSearchedPatterns(this.props.location.query.searchWords);
     // } else {
       this.props.fetchPatterns();
+      this.props.fetchFavorites();
     // }
   }
 

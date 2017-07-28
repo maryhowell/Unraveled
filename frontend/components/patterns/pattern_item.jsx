@@ -10,28 +10,50 @@ class PatternItem extends React.Component {
   constructor(props) {
     super(props);
     this.toggleFavorite = this.toggleFavorite.bind(this);
+    this.hearted = false;
   }
 
   componentDidMount() {
-
     this.props.fetchPattern(this.props.match.params.patternId);
     this.props.fetchReviews(this.props.match.params.patternId);
-
-}
-
-  toggleFavorite(){
-    if (this.props.pattern.liked === true) {
-      this.props.dislikePattern(this.props.pattern.pattern_id);
-    } else {
-      this.props.likePattern(this.props.pattern.pattern_id);
+    if (this.props.currentUser) {
+      this.props.fetchFavorite(this.props.match.params.patternId);
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (Object.keys(nextProps.favorites).length > 0) {
+      this.hearted = true;
+    } else {
+      this.hearted = false;
+    }
+  }
+
+  toggleFavorite(){
+    if (this.hearted) {
+      this.dislikePattern(Object.keys(this.props.favorites)[0]);
+    } else {
+      this.likePattern(this.props.pattern.pattern_id);
+    }
+  }
+
+  dislikePattern(favoriteId){
+    this.props.deleteFavorite(favoriteId).then(() => this.props.fetchFavorite(this.props.match.params.patternId));
+  }
+
+  likePattern(){
+    this.props.createFavorite({
+      user_id: this.props.currentUser.id,
+      pattern_id: this.props.match.params.patternId
+    });
+
+  }
+
    heart(){
-    if (this.props.pattern.liked === true ) {
+    if (this.hearted) {
       return (
         <div className="heart-container">
-          <div onClick={this.toggleFavorite} className="heart red">❤</div>
+          <div onClick={this.toggleFavorite} className="heart-red">❤</div>
         </div>
       );
     } else {
@@ -58,7 +80,7 @@ class PatternItem extends React.Component {
             <div className='pattern-show-details'>
               <ul className='dislike-favorite'>
                 <li>
-                {this.heart()}
+                {this.props.currentUser ? this.heart() : ''}
                 </li>
               </ul>
               <ul className='top-description'>

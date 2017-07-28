@@ -107,7 +107,11 @@ img.image {
 
 }
 
-.fa-heart-o:before {
+.heart-container {
   margin-left: 306px;
   cursor: pointer;
+}
+
+.heart-red{
+  color: red;
 }

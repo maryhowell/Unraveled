@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const deletebutton = (review, deleteReview, currentUser) => {
-  if (currentUser.id === review.user.id) {
+  if (currentUser && currentUser.id === review.user.id) {
      return <button className='deletereviewbutton'
                     onClick={() => deleteReview(review.id)}>X</button>
                 };

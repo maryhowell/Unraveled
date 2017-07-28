@@ -4,10 +4,11 @@ import { withRouter } from 'react-router';
 // Actions
 import { selectAllPatterns, selectFewPatterns } from '../../reducers/selectors';
 import { fetchPatterns, fetchPattern } from '../../actions/pattern_actions';
+import { fetchFavorites } from '../../actions/favorite_actions';
 
 
 const mapStateToProps = state => ({
-  patterns: selectAllPatterns(state),
+  patterns: state.patterns,
   fewPatterns: selectFewPatterns(state),
   favorites: Object.values(state.favorites),
   loading: state.fetching
@@ -15,7 +16,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchPatterns: () => dispatch(fetchPatterns()),
-  fetchSearchedPatterns: searchWords => dispatch(fetchSearchedPatterns(searchWords))
+  fetchSearchedPatterns: searchWords => dispatch(fetchSearchedPatterns(searchWords)),
+  fetchFavorites: () => dispatch(fetchFavorites())
 });
 
 export default withRouter(connect(

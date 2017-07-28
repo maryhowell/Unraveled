@@ -1,14 +1,15 @@
-export const fetchFavorites = userId => {
+export const fetchFavorites = () => {
   return $.ajax({
     method: 'GET',
-    url: `api/user/${userId}/favorites`
+    url: `api/favorites`
   });
 };
 
-export const fetchFavorite = id => {
+export const fetchFavorite = patternId => {
   return $.ajax({
     method: 'GET',
-    url: `api/favorites/${id}`
+    url: `api/favorites/`,
+    data: { pattern_id: patternId }
   });
 };
 

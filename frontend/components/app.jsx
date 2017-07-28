@@ -24,7 +24,7 @@ const App = ( { first }) => (
       <Route path='/patterns/:patternId'component={ PatternItemContainer } />
       <Route path='/patterns' component={ PatternListContainer } />
     </Switch>
-    <Route path='/user/:userId/favorites' component={ FavoriteIndexContainer } />
+    <Route path='/user/:userId/favorites' component={ PatternListContainer } />
 
     <Route path="/cart" component= { CheckoutContainer }/>
     </header>
