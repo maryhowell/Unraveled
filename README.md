@@ -29,7 +29,7 @@ UnRaveld has a full end-to-end authentication system where users can register or
 
 Users can browse the latest items from the home page or all the patterns from the All Patterns page. When a user clicks on an item, he/she will be directed to the item page, where the user can read all the reviews for that item. An example of an item page is shown below:
 
-![Item](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/item.png)
+![Item](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/image.png)
 
 ### Reviews
 
