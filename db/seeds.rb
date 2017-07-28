@@ -172,31 +172,12 @@ pattern10 = Pattern.create!(
 
 pattern11 = Pattern.create!(
   seller_id: user7.id,
-  name: "Far Hills",
-  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500955160/far_hills_hat_01_medium2_xpihuc.jpg"],
-  short_description: "This cabled shawl-collar cardigan radiates classic good looks and cozy texture. Elaborate cable motifs really make Quarry purr; Snoqualmie’s grid of densely twining stitches looks complex but is intuitive to work and easy to memorize. Whether you wear it as a barn coat or dress it up with tall boots and a skirt, this is knitwear that will make you look forward to cold weather.",
+  name: "Ondawa",
+  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1501260420/Ondawa_01_medium2_nipbre.jpg"],
+  short_description: "ndawa is knit in Shelter and designed to be oversized or even generously oversized; we chose to style it with almost 19” of ease. Since the size of the boatneck is determined by your seaming, you can adjust the way the garment sits on your shoulders after the knitting is complete. Measure your arm circumference at the biceps to determine which size sleeve will give you a slender fit that’s not too restricting.",
   price: 9.00,
 )
 
-pattern12 = Pattern.create!(
-  seller_id: user5.id,
-  name: "Breslin",
-  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500954991/breslin_03_medium2_srhiwl.jpg",
-              "https://res.cloudinary.com/unravled/image/upload/v1500954991/breslin_01_medium2_f44hvl.jpg",
-              "https://res.cloudinary.com/unravled/image/upload/v1500954991/FLAT_breslin_medium2_itjzqg.jpg"],
-  short_description: "Set-in sleeves and waist shaping update the traditional boxy gansey for women who prefer a sleeker fit. Both yoke and upper sleeves are textured with a spare, high-relief, industrial pattern that recalls beams, trusses, and grating. The reverse stockinette body and sleeves are knit circularly to the underarm, then all pieces are completed working flat and sewn together. An open, minimally finished neckline and a light fabric of Loft make Breslin great for layering over collared shirts..",
-  price: 9.00,
-)
-
-pattern13 = Pattern.create!(
-  seller_id: user7.id,
-  name: "Far Hills",
-  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500955160/far_hills_hat_01_medium2_xpihuc.jpg",
-              "https://res.cloudinary.com/unravled/image/upload/v1500955160/far_hills_hat_02_medium2_tbeglc.jpg",
-              "https://res.cloudinary.com/unravled/image/upload/v1500955160/FLAT_far_hills_hat_full_foothills_medium2_gr5egp.jpg"],
-  short_description: "This deeply textured beanie uses the same beaded cable found on the Far Hills Scarf, so you can knit a matched set. Here the cable is reinterpreted as chains of diminishing horseshoes that encircle the hat as they climb to the crown. A tubular cast-on yields a durable double-rib edge that’s elastic enough to fit most adult heads. The hat is worked from a large chart in two skeins of Shelter.",
-  price: 8.00,
-)
 
 review1 = Review.create!(
   item_id: 1,
