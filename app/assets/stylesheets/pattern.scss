@@ -22,8 +22,6 @@ a {
 
 .pattern-image {
   margin: 10px;
-
-
 }
 
 .pattern-name {
@@ -107,4 +105,9 @@ img.image {
    margin: 34px 0 34px 34px;
    border-radius: 4px;
 
+}
+
+.fa-heart-o:before {
+  margin-left: 306px;
+  cursor: pointer;
 }

@@ -53,13 +53,16 @@ const signedInGreeting = (currentUser, logout) => (
            <li>{`${currentUser.email}`}</li>
          </ul>
        </li>
+       <Link className='allfavoritesbutton' to={`/user/${currentUser.id}/favorites`}>
+         Favorites
+       </Link>
        <li>
          <Link to='/'>
            <button className='signoutbutton' onClick={ logout }>SignOut</button>
          </Link>
        </li>
        <li>
-         <Link className='cart-link' to='/checkout'>
+         <Link className='cart-link' to='/cart'>
            <ul className='cart'>
              <li>
                <i className='fa fa-shopping-cart' name='fa-shopping-cart' aria-hidden='true' />

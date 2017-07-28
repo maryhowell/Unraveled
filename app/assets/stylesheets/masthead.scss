@@ -32,3 +32,24 @@
     padding: 12px;
     text-decoration: none;
 }
+
+.masthead-blurb {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  background: none;
+  font-size: 1.5em;
+  color: #636363;
+  display: flex;
+  margin-left: auto;
+  /* margin-right: 75px; */
+  cursor: pointer;
+  justify-content: space-between;
+  /* border-style: solid; */
+  padding: 12px;
+  text-decoration: none;
+  width: 400px;
+  text-align: center;
+  top: 180px;
+  left: 36px;
+
+}

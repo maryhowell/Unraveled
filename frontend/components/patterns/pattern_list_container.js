@@ -9,6 +9,7 @@ import { fetchPatterns, fetchPattern } from '../../actions/pattern_actions';
 const mapStateToProps = state => ({
   patterns: selectAllPatterns(state),
   fewPatterns: selectFewPatterns(state),
+  favorites: Object.values(state.favorites),
   loading: state.fetching
 });
 

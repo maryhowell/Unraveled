@@ -6,7 +6,7 @@ class Api::PatternsController < ApplicationController
   end
 
   def show
-    render json: Pattern.find(params[:id])
+    @pattern = Pattern.find(params[:id])
   end
 
   def create

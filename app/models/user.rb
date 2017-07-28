@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
   has_many :patterns, foreign_key: :seller_id, class_name: :Pattern
   has_many :reviews
   has_many :favorites
+  has_many :favorited_patterns, through: :favorites, source: :pattern
 
   def password=(password)
     self.password_digest = BCrypt::Password.create(password)

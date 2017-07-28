@@ -26,10 +26,9 @@ class PatternIndex extends Component {
   // }
 
   render() {
-    if (this.props.loading === true || !this.props.patterns) {
+    if (this.props.loading === true || Object.keys(this.props.patterns).length === 0) {
       return <div>Loading</div>;
     }
-
     const { patterns, fewPatterns, favorites } = this.props;
 
     if (this.props.location.pathname === '/') {
@@ -42,12 +41,15 @@ class PatternIndex extends Component {
           </div>
         </section>
       );
-    } else if (this.props.location.pathname === '/user') {
+    } else if (this.props.location.pathname.includes('/favorites')) {
       return (
         <section className='section-favorites-preview'>
           <div className='patterns-index'>
             <ul>
-              { favorites.map(pattern => <PatternIndexPattern key={pattern.id} pattern={pattern} />)}
+              { favorites.map(favorite => <PatternIndexPattern
+                                          key={favorite.pattern_id}
+                                          pattern={patterns[favorite.pattern_id]}
+                                           />)}
             </ul>
           </div>
         </section>

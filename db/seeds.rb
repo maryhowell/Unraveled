@@ -5,6 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+Pattern.destroy_all
+Review.destroy_all
+Favorite.destroy_all
+
 
 demo = User.create!(
   first_name: "Demo",
@@ -176,4 +181,41 @@ review6 = Review.create!(
   item_id: 7,
   user_id: 7,
   description: "This is the best!"
+)
+
+favorite1 = Favorite.create!(
+  pattern_id: 1,
+  user_id: 1
+)
+favorite2 = Favorite.create!(
+  pattern_id: 2,
+  user_id: 2
+)
+favorite3 = Favorite.create!(
+  pattern_id: 3,
+  user_id: 3
+)
+favorite4 = Favorite.create!(
+  pattern_id: 4,
+  user_id: 4
+)
+favorite5 = Favorite.create!(
+  pattern_id: 5,
+  user_id: 5
+)
+favorite6 = Favorite.create!(
+  pattern_id: 6,
+  user_id: 6
+)
+favorite7 = Favorite.create!(
+  pattern_id: 7,
+  user_id: 7
+)
+favorite8 = Favorite.create!(
+  pattern_id: 2,
+  user_id: 2
+)
+favorite9 = Favorite.create!(
+  pattern_id: 3,
+  user_id: 3
 )

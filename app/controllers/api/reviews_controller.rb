@@ -1,12 +1,6 @@
 class Api::ReviewsController < ApplicationController
   def index
-     params.has_key?(:item_id)
-      @reviews = Review.where(item_id: params[:pattern_id])
-    # else
-    #   @reviews = current_user.reviews
-    # end
-
-    render :index
+    @reviews = Review.where(item_id: params[:pattern_id])
   end
 
   def show
