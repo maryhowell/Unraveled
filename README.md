@@ -81,10 +81,11 @@ Below is the render for my items.  This code incompasses renders to three differ
       );
     }
   }
-}```
+}
+```
 
 ## Future Features
 
 - [ ] Search Bar
 - [ ] Cart
-- [ ] Ravelrys API 
+- [ ] Ravelrys API
