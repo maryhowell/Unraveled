@@ -22,7 +22,7 @@ UnRaveld is a single-page e-commerce web application that is inspired by Etsy, R
 
 UnRaveld has a full end-to-end authentication system where users can register or sign in, and continue to explore the site without a redirect. When a user registers, his/her password is encrypted into a password hash with BCrypt before it's stored in the database. When a user signs in, his/her password is, again, encrypted with BCrypt and compared with the stored password hash for that user. Although registering or signing in isn't required to explore the site, it's required to add patterns to your favorites and to leave a review.
 
--add image here for modal
+![Modal](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/login.png)
 
 ### Item Listings
 
