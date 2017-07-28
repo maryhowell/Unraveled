@@ -47,12 +47,6 @@ const signedInGreeting = (currentUser, logout) => (
 
       <nav className='signout-nav'>
      <ul>
-       <li className='user'>
-         <ul>
-
-
-         </ul>
-       </li>
        <Link className='allfavoritesbutton' to={`/user/${currentUser.id}/favorites`}>
          Favorites
        </Link>
@@ -87,6 +81,13 @@ const Greeting = ({ currentUser, logout, login }) => (
 );
 
 export default Greeting;
+
+// <li className='user'>
+//   <ul>
+//
+//
+//   </ul>
+// </li>
 
 // <Link className="allfavoritesbutton" to=`/user/${currentUser.id}/favorites`>
 // Favorites

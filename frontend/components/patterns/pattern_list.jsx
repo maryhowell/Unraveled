@@ -39,7 +39,7 @@ class PatternIndex extends Component {
       return (
         <section className='section-description-preview'>
           <div className='patterns-index'>
-            <ul className='something'>
+            <ul className='fewpatterns'>
               { fewPatterns.map(pattern => <PatternIndexPattern key={pattern.id} pattern={pattern} />)}
             </ul>
           </div>

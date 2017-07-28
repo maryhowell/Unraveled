@@ -37,49 +37,51 @@ When a user makes an account he/she has access to review forms for a knitting pa
 ![Review](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/review.png)
 
 
-Below is the render for my items.  This code incompasses renders to three different pages.  This includes the root, All patterns and favorites.  
+Below is the way a user can favorite a pattern.  This code changes the value of hearted to check if a user already has 'hearted' this pattern previously.  It also gives you the ability to change your mind if you want to remove it from your favorites. This will store the information in the database in a joins table. 
 
 
-```  render() {
-    if (this.props.loading === true || Object.keys(this.props.patterns).length === 0) {
-      return <div>Loading</div>;
-    }
-    const { patterns, fewPatterns, favorites } = this.props;
+```
+componentWillReceiveProps(nextProps) {
+  if (Object.keys(nextProps.favorites).length > 0) {
+    this.hearted = true;
+  } else {
+    this.hearted = false;
+  }
+}
 
-    if (this.props.location.pathname === '/') {
-      return (
-        <section className='section-description-preview'>
-          <div className='patterns-index'>
-            <ul className='something'>
-              { fewPatterns.map(pattern => <PatternIndexPattern key={pattern.id} pattern={pattern} />)}
-            </ul>
-          </div>
-        </section>
-      );
-    } else if (this.props.location.pathname.includes('/favorites')) {
-      return (
-        <section className='section-favorites-preview'>
-          <div className='patterns-index'>
-            <ul className='favorites-show'>
-              { favorites.map(favorite => <PatternIndexPattern
-                                          key={favorite.pattern_id}
-                                          pattern={patterns[favorite.pattern_id]}
-                                           />)}
-            </ul>
-          </div>
-        </section>
-      );
-    }else {
-      return (
-        <section className='section-description-all'>
-          <div >
-            <ul className='patterns-index'>
-              { patterns.map(pattern => <PatternIndexPattern key={pattern.id} pattern={pattern} />)}
-            </ul>
-          </div>
-        </section>
-      );
-    }
+toggleFavorite(){
+  if (this.hearted) {
+    this.dislikePattern(Object.keys(this.props.favorites)[0]);
+  } else {
+    this.likePattern(this.props.pattern.pattern_id);
+  }
+}
+
+dislikePattern(favoriteId){
+  this.props.deleteFavorite(favoriteId).then(() => this.props.fetchFavorite(this.props.match.params.patternId));
+}
+
+likePattern(){
+  this.props.createFavorite({
+    user_id: this.props.currentUser.id,
+    pattern_id: this.props.match.params.patternId
+  });
+
+}
+
+ heart(){
+  if (this.hearted) {
+    return (
+      <div className="heart-container">
+        <div onClick={this.toggleFavorite} className="fa fa-heart-o fa-2x heart-red" name="fa-heart-o" aria-hidden='true'></div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="heart-container">
+        <div onClick={this.toggleFavorite} className="fa fa-heart-o fa-2x heart" name="fa-heart-o" aria-hidden='true'></div>
+      </div>
+    );
   }
 }
 ```

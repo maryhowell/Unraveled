@@ -93,9 +93,11 @@ class SessionForm extends React.Component {
 
             {this.renderErrors()}
             <input className="submitbutton"
+              onclick="location.href='/patterns';"
               type="submit"
               value={this.props.formType === 'login' ? "Log In" : "Create Account"} />
               <input className="submitbutton"
+                onclick="location.href='/patterns';"
                 type="submit"
                 value={this.props.formType === 'login' ? "Create Account" : "Log In"} />
           </div>

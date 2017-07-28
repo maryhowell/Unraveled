@@ -8,10 +8,10 @@ const Footer = () => (
     </ul>
     <ul className='links'>
       <li className='github'>
-        <a href={'https://github.com/maryhowell'}>Github</a>
+        <a className='personal-links' href={'https://github.com/maryhowell'}>Github</a>
       </li>
       <li>
-        <a href={'https://www.linkedin.com/in/mary-howell-13200067/'}>LinkedIn</a>
+        <a className='personal-links' href={'https://www.linkedin.com/in/mary-howell-13200067/'}>LinkedIn</a>
       </li>
     </ul>
   </div>
