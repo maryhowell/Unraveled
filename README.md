@@ -32,7 +32,7 @@ Users can browse the latest items from the home page or all the patterns from th
 
 ### Reviews
 
-When a user makes an account he/she has access to review forms for a knitting pattern. When the user submits a review for an pattern, he/she is directed to the page for that item and his/her review can be seen on that page. Below are examples of an item page and an item page with a newly submitted review by a user named 'Pick Name for Review':
+When a user makes an account he/she has access to review forms for a knitting pattern. When the user submits a review for an pattern, he/she is directed to the page for that item and his/her review can be seen on that page. Below are examples of an item page and an item page with a newly submitted review by a user named 'Jessica':
 
 ![Review](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/review.png)
 

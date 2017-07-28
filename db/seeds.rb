@@ -27,23 +27,23 @@ user0 = User.create!(
 )
 
 user1 = User.create!(
-  first_name: "Mable",
-  last_name: "Smith",
-  email: "mable@gmail.com",
+  first_name: "Hope",
+  last_name: "Wanroy",
+  email: "Hope@gmail.com",
   password: "12345678"
 )
 
 user2 = User.create!(
-  first_name: "Laurie",
-  last_name: "Smithy",
-  email: "jessica@gmail.com",
+  first_name: "Dallas",
+  last_name: "Hall",
+  email: "Dallas@gmail.com",
   password: "12345678"
 )
 
 user3 = User.create!(
-  first_name: "John",
-  last_name: "Jacob",
-  email: "Dallas@gmail.com",
+  first_name: "Kelly",
+  last_name: "Chung",
+  email: "Kelly@gmail.com",
   password: "12345678"
 )
 
@@ -137,6 +137,58 @@ pattern6 = Pattern.create!(
 )
 
 pattern7 = Pattern.create!(
+  seller_id: user7.id,
+  name: "Far Hills",
+  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500955160/far_hills_hat_01_medium2_xpihuc.jpg",
+              "https://res.cloudinary.com/unravled/image/upload/v1500955160/far_hills_hat_02_medium2_tbeglc.jpg",
+              "https://res.cloudinary.com/unravled/image/upload/v1500955160/FLAT_far_hills_hat_full_foothills_medium2_gr5egp.jpg"],
+  short_description: "This deeply textured beanie uses the same beaded cable found on the Far Hills Scarf, so you can knit a matched set. Here the cable is reinterpreted as chains of diminishing horseshoes that encircle the hat as they climb to the crown. A tubular cast-on yields a durable double-rib edge that’s elastic enough to fit most adult heads. The hat is worked from a large chart in two skeins of Shelter.",
+  price: 8.00,
+)
+
+pattern8 = Pattern.create!(
+  seller_id: user5.id,
+  name: "Byway",
+  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1501258617/byway_05_medium2_qsdgtg.jpg"],
+  short_description: "Beat the cold weather in instant style with a chunky cable-knit scarf or wrap. Blocks of textural patterning reminiscent of seamen’s ganseys create an attractive allover fabric and keep the knitting process engaging. Work up a traditional scarf or, if you prefer accessories that don’t mince around, expand your Byway to a dramatic wrap. Quarry makes the knitting fly and shows the stitch patterns beautifully.",
+  price: 8.00,
+)
+
+pattern9 = Pattern.create!(
+  seller_id: user7.id,
+  name: "High Pines",
+  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1501258896/high_pines_1_medium2_lx5oii.jpg"],
+  short_description: "Branching half-twisted rib and knit-purl texture shifts combine to decorate this shaped cowl with stitchwork that conjures alpine evergreens. Columns of clustered stitches that are decreased and then restored in the same maneuver punctuate the motifs, which subtly diminish toward the top edge for a fit that’s wider at the shoulders and slightly closer about the neck.",
+  price: 8.00,
+)
+
+pattern10 = Pattern.create!(
+  seller_id: user5.id,
+  name: "Snoqualmie",
+  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1501259136/Snoqualmie_04_medium2_aqtjva.jpg"],
+  short_description: "This cabled shawl-collar cardigan radiates classic good looks and cozy texture. Elaborate cable motifs really make Quarry purr; Snoqualmie’s grid of densely twining stitches looks complex but is intuitive to work and easy to memorize. Whether you wear it as a barn coat or dress it up with tall boots and a skirt, this is knitwear that will make you look forward to cold weather.",
+  price: 9.00,
+)
+
+pattern11 = Pattern.create!(
+  seller_id: user7.id,
+  name: "Far Hills",
+  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500955160/far_hills_hat_01_medium2_xpihuc.jpg"],
+  short_description: "This cabled shawl-collar cardigan radiates classic good looks and cozy texture. Elaborate cable motifs really make Quarry purr; Snoqualmie’s grid of densely twining stitches looks complex but is intuitive to work and easy to memorize. Whether you wear it as a barn coat or dress it up with tall boots and a skirt, this is knitwear that will make you look forward to cold weather.",
+  price: 9.00,
+)
+
+pattern12 = Pattern.create!(
+  seller_id: user5.id,
+  name: "Breslin",
+  image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500954991/breslin_03_medium2_srhiwl.jpg",
+              "https://res.cloudinary.com/unravled/image/upload/v1500954991/breslin_01_medium2_f44hvl.jpg",
+              "https://res.cloudinary.com/unravled/image/upload/v1500954991/FLAT_breslin_medium2_itjzqg.jpg"],
+  short_description: "Set-in sleeves and waist shaping update the traditional boxy gansey for women who prefer a sleeker fit. Both yoke and upper sleeves are textured with a spare, high-relief, industrial pattern that recalls beams, trusses, and grating. The reverse stockinette body and sleeves are knit circularly to the underarm, then all pieces are completed working flat and sewn together. An open, minimally finished neckline and a light fabric of Loft make Breslin great for layering over collared shirts..",
+  price: 9.00,
+)
+
+pattern13 = Pattern.create!(
   seller_id: user7.id,
   name: "Far Hills",
   image_url: ["https://res.cloudinary.com/unravled/image/upload/v1500955160/far_hills_hat_01_medium2_xpihuc.jpg",

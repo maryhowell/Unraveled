@@ -53,13 +53,13 @@ class PatternItem extends React.Component {
     if (this.hearted) {
       return (
         <div className="heart-container">
-          <div onClick={this.toggleFavorite} className="heart-red">❤</div>
+          <div onClick={this.toggleFavorite} className="fa fa-heart-o fa-2x heart-red" name="fa-heart-o" aria-hidden='true'></div>
         </div>
       );
     } else {
       return (
         <div className="heart-container">
-          <div onClick={this.toggleFavorite} className="heart">❤</div>
+          <div onClick={this.toggleFavorite} className="fa fa-heart-o fa-2x heart" name="fa-heart-o" aria-hidden='true'></div>
         </div>
       );
     }
