@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { selectAllPatterns } from '../../reducers/selectors';
 
 
 import PatternIndexPattern from './pattern_list_pattern';
@@ -12,7 +13,9 @@ class PatternIndex extends Component {
     //   this.props.fetchSearchedPatterns(this.props.location.query.searchWords);
     // } else {
       this.props.fetchPatterns();
-      this.props.fetchFavorites();
+      if (this.props.currentUser) {
+        this.props.fetchFavorites();
+      }
     // }
   }
 
@@ -55,12 +58,13 @@ class PatternIndex extends Component {
           </div>
         </section>
       );
-    }else {
+    } else {
+      const patternValues = selectAllPatterns(patterns);
       return (
         <section className='section-description-all'>
           <div >
             <ul className='patterns-index'>
-              { patterns.map(pattern => <PatternIndexPattern key={pattern.id} pattern={pattern} />)}
+              { patternValues.map(pattern => <PatternIndexPattern key={pattern.id} pattern={pattern} />)}
             </ul>
           </div>
         </section>

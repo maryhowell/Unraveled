@@ -11,7 +11,8 @@ const mapStateToProps = state => ({
   patterns: state.patterns,
   fewPatterns: selectFewPatterns(state),
   favorites: Object.values(state.favorites),
-  loading: state.fetching
+  loading: state.fetching,
+  currentUser: state.session.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({
