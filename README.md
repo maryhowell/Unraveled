@@ -27,13 +27,13 @@ UnRaveld has a full end-to-end authentication system where users can register or
 
 ### Item Listings
 
-Users can browse the latest items from the home page or all the patterns from the All Patterns page. When a user clicks on an item, he/she will be directed to the item page, where the user can read all the reviews for that item. An example of an item page is shown below:
+Users can browse the latest patterns from the home page or all the patterns from the All Patterns page. When a user clicks on an pattern, he/she will be directed to the pattern item page, where the user can read all the reviews for that pattern. An example of an pattern item page is shown below:
 
 ![Item](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/image.png)
 
 ### Reviews
 
-When a user makes an account he/she has access to review forms for a knitting pattern. When the user submits a review for an pattern, he/she is directed to the page for that item and his/her review can be seen on that page. Below are examples of an item page and an item page with a newly submitted review by a user named 'Jessica':
+When a user makes an account he/she has access to review a knitting pattern. When the user submits a review for an pattern they can immediately see the review above with out refreshing the page. Below are examples of an item page and an item page with a newly submitted review by a user named 'Jessica':
 
 ![Review](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/review.png)
 
