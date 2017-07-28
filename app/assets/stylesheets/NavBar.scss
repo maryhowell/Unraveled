@@ -12,13 +12,16 @@
   border-bottom: 1px solid #EBECEC;
 }
 
+.signout-nav {
+  margin-bottom: 19px;
+}
 
 .navbar {
   & ul {
     display: flex;
     list-style: none;
     padding-right: 2%;
-    margin-top: -4px;
+    margin-top: 20px;
     & li {
       flex: 1 1 100%;
     }
