@@ -1,6 +1,7 @@
 # UnRaveld
 
 [Explore UnRaveld](http://unraveld.herokuapp.com/#/)
+or go to UNRAVELD.CO
 
 UnRaveld is a single-page e-commerce web application that is inspired by Etsy, Ravelry, and Brooklyn Tweed.
 
@@ -37,7 +38,7 @@ When a user makes an account he/she has access to review forms for a knitting pa
 ![Review](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/review.png)
 
 
-Below is the way a user can favorite a pattern.  This code changes the value of hearted to check if a user already has 'hearted' this pattern previously.  It also gives you the ability to change your mind if you want to remove it from your favorites. This will store the information in the database in a joins table. 
+Below is the way a user can favorite a pattern.  This code changes the value of hearted to check if a user already has 'hearted' this pattern previously.  It also gives you the ability to change your mind if you want to remove it from your favorites. This will store the information in the database in a joins table.
 
 
 ```
