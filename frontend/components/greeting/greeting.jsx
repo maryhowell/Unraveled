@@ -50,7 +50,7 @@ const signedInGreeting = (currentUser, logout) => (
        <li className='user'>
          <ul>
 
-           <li>{`${currentUser.email}`}</li>
+        
          </ul>
        </li>
        <Link className='allfavoritesbutton' to={`/user/${currentUser.id}/favorites`}>

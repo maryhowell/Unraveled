@@ -98,14 +98,13 @@ input .login-input {
 
 .allpatternsbutton {
   font-family: 'Poppins', sans-serif;
-  background:none;
-  border:none;
-  font-size:1em;
-  color:black;
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: black;
   display: flex;
-  margin-left: auto;
+  margin-left: 91px;
   cursor: pointer;
-  justify-content: space-between;
 }
 
 
@@ -183,4 +182,6 @@ input .login-input {
   display: flex;
   justify-content: center;
   margin-top: 13px;
+  /* margin-left: -6px; */
+  padding-right: 5px;
 }
