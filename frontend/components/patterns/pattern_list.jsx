@@ -46,7 +46,7 @@ class PatternIndex extends Component {
       return (
         <section className='section-favorites-preview'>
           <div className='patterns-index'>
-            <ul>
+            <ul className='favorites-show'>
               { favorites.map(favorite => <PatternIndexPattern
                                           key={favorite.pattern_id}
                                           pattern={patterns[favorite.pattern_id]}
