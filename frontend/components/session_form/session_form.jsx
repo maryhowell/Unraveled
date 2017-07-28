@@ -12,8 +12,10 @@ class SessionForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.loggedIn) {
-      this.props.history.push('/');
+    console.log("Yo");
+    if (nextProps.loggedIn && !this.props.loggedIn) {
+      console.log("hi");
+      this.props.history.push('/patterns');
     }
   }
 
@@ -93,11 +95,9 @@ class SessionForm extends React.Component {
 
             {this.renderErrors()}
             <input className="submitbutton"
-              onclick="location.href='/patterns';"
               type="submit"
               value={this.props.formType === 'login' ? "Log In" : "Create Account"} />
               <input className="submitbutton"
-                onclick="location.href='/patterns';"
                 type="submit"
                 value={this.props.formType === 'login' ? "Create Account" : "Log In"} />
           </div>
