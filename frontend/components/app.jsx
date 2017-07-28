@@ -28,6 +28,7 @@ const App = ( { first }) => (
 
     <Route path="/cart" component= { CheckoutContainer }/>
     </header>
+    <Footer/>
   </div>
 );
 
