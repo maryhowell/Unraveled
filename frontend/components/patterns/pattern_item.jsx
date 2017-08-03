@@ -87,7 +87,7 @@ class PatternItem extends React.Component {
               <ul className='top-description'>
                 <h2 className='pattern-show-name'>{ pattern.name }</h2>
                 <li className='pattern-show-price'>{ `$${pattern.price}.00` } (PDF DOWNLOAD)</li>
-                <li className='cart-button'> Add to Cart button</li>
+
               </ul>
               <div className='pattern-show-description'>{ pattern.short_description }</div>
             </div>
@@ -113,7 +113,7 @@ class PatternItem extends React.Component {
 }
 
 export default PatternItem;
-
+// <li className='cart-button'> Add to Cart button</li>
 // <button className=' fa fa-heart-o' name=' fa-favorites' aria-hidden='true'/>
     // <FavoriteIndexContainer/>
 // import CartItemFormContainer from '../cart_items/cart_item_form_container';
