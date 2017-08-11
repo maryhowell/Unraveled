@@ -9,7 +9,6 @@ import Masthead from './masthead/masthead';
 import Footer from './footer/footer';
 import PatternListContainer from './patterns/pattern_list_container';
 import PatternItemContainer from './patterns/pattern_item_container';
-import CheckoutContainer from './carts/checkout_container';
 import FavoriteIndexContainer from './favorites/favorite_index_container';
 
 
@@ -25,8 +24,6 @@ const App = ( { first }) => (
       <Route path='/patterns' component={ PatternListContainer } />
     </Switch>
     <Route path='/user/:userId/favorites' component={ PatternListContainer } />
-
-    <Route path="/cart" component= { CheckoutContainer }/>
     </header>
     <Footer/>
   </div>
