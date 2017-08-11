@@ -21,19 +21,19 @@ UnRaveld is a single-page e-commerce web application that is inspired by Etsy, R
 
 ### User Authentication
 
-UnRaveld has a full end-to-end authentication system where users can register or sign in, and continue to explore the site without a redirect. When a user registers, his/her password is encrypted into a password hash with BCrypt before it's stored in the database. When a user signs in, his/her password is, again, encrypted with BCrypt and compared with the stored password hash for that user. Although registering or signing in isn't required to explore the site, it's required to add patterns to your favorites and to leave a review.
+UnRaveld has a custom build user authentication system. Although registering or signing in isn't required to explore the site, it's required to add patterns to your favorites and to leave a review.
 
 ![Modal](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/login.png)
 
 ### Item Listings
 
-Users can browse the latest patterns from the home page or all the patterns from the All Patterns page. When a user clicks on an pattern, he/she will be directed to the pattern item page, where the user can read all the reviews for that pattern. An example of an pattern item page is shown below:
+Update
 
 ![Item](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/image.png)
 
 ### Reviews
 
-When a user makes an account he/she has access to review a knitting pattern. When the user submits a review for an pattern they can immediately see the review above with out refreshing the page. Below are examples of an item page and an item page with a newly submitted review by a user named 'Jessica':
+UPdate
 
 ![Review](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/review.png)
 
