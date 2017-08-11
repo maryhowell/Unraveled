@@ -3,7 +3,7 @@
 [Explore UnRaveld](http://unraveld.herokuapp.com/#/)
 or go to UNRAVELD.CO
 
-UnRaveld is a single-page e-commerce web application that is inspired by Etsy, Ravelry, and Brooklyn Tweed.
+UnRaveld is a single-page e-commerce webstire that is inspired by Etsy, Ravelry, and Brooklyn Tweed.
 
 ![UnRaveld](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/front-unraveld.png)
 
