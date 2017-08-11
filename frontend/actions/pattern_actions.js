@@ -14,6 +14,11 @@ export const receivePattern = pattern => ({
   pattern
 });
 
+export const startFetchingPatterns = () => ({
+  type: START_FETCHING,
+});
+
+
 export const fetchPatterns = () => dispatch => {
   dispatch(startFetchingPatterns());
   return APIUtil.fetchPatterns().then(patterns => (
@@ -27,11 +32,3 @@ export const fetchPattern = id => dispatch => (
     return dispatch(receivePattern(pattern));
   })
 );
-
-export const fetchSearchedPatterns = searchWords => dispatch => (
-  APIUtil.fetchSearchedPatterns(searchWords).then(patterns => dispatch(receivePatterns(patterns)))
-);
-
-export const startFetchingPatterns = () => ({
-  type: START_FETCHING,
-});

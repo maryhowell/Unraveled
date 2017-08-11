@@ -9,25 +9,13 @@ class PatternIndex extends Component {
 
 
   componentWillMount() {
-    // if (this.props.location.query.searchWords) {
-    //   this.props.fetchSearchedPatterns(this.props.location.query.searchWords);
-    // } else {
       this.props.fetchPatterns();
       if (this.props.currentUser) {
         this.props.fetchFavorites();
       }
-    // }
+
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   // if (this.props.location.query.searchWords !== nextProps.location.query.searchWords) {
-  //   //   if (nextProps.location.query.searchWords) {
-  //   //     nextProps.fetchSearchedPatterns(nextProps.location.query.searchWords);
-  //   //   } else {
-  //       nextProps.fetchPatterns();
-  //   //   }
-  //   // }
-  // }
 
   render() {
     if (this.props.loading === true || Object.keys(this.props.patterns).length === 0) {
