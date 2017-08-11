@@ -15,13 +15,19 @@
   color: #A5A5A5;
 }
 
-.my-info, .links {
+.info {
   display: flex;
   justify-content: center;
   margin-top: 5.5px;
 }
 
-.my-info {
+ .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 5.5px;
+}
+
+.info {
   color: #A5A5A5;
 }
 
@@ -38,11 +44,6 @@
   border-right: 1px solid #EBECEC;
 }
 
-.disclaimer {
-  margin-top: 11px;
-  font-size: 12px;
-}
-
-.personal-links {
+.links {
   color: #6C6499;
 }
