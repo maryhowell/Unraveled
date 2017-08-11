@@ -30,7 +30,3 @@ const App = ( { first }) => (
 );
 
 export default App;
-
- // onEnter={ _ensureSignedIn }
-      // <Route path='/cart' component={ CartsIndexContainer }/>
-// import CartsIndexContainer from './carts/carts_index_container';

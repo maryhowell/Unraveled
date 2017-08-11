@@ -87,6 +87,8 @@ likePattern(){
 }
 ```
 
+- project influenced by https://etsaclone.christinetwang.me/
+
 ## Future Features
 
 - [ ] Search Bar
