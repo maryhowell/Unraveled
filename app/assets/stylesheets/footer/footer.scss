@@ -19,16 +19,14 @@
   display: flex;
   justify-content: center;
   margin-top: 5.5px;
+  color: #A5A5A5;
 }
 
  .links {
   display: flex;
   justify-content: center;
   margin-top: 5.5px;
-}
-
-.info {
-  color: #A5A5A5;
+  color: #6C6499;
 }
 
 .links > li {
@@ -42,8 +40,4 @@
 
 .github {
   border-right: 1px solid #EBECEC;
-}
-
-.links {
-  color: #6C6499;
 }

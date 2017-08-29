@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const Footer = () => (
   <div className='footer'>
-    <ul className='info'>
+    <ul className='name'>
       <li>Mary Howell</li>
     </ul>
     <ul className='links'>

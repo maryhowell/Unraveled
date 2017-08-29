@@ -113,8 +113,3 @@ class PatternItem extends React.Component {
 }
 
 export default PatternItem;
-// <li className='cart-button'> Add to Cart button</li>
-// <button className=' fa fa-heart-o' name=' fa-favorites' aria-hidden='true'/>
-    // <FavoriteIndexContainer/>
-// import CartItemFormContainer from '../cart_items/cart_item_form_container';
-  // <CartItemFormContainer />
