@@ -33,7 +33,7 @@ Update
 
 ### Reviews
 
-UPdate
+Users who have logged in can write a review of any item.  You can also delete reviews that you have previously written. 
 
 ![Review](https://github.com/maryhowell/Unraveled/blob/master/app/assets/images/review.png)
 
